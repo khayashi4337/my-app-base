@@ -10,12 +10,27 @@ import { Sidemenu } from '../../../shared/sidemenu/Sidemenu'
 import styled from 'styled-components';
 import { DefaultButton, initializeIcons } from '@fluentui/react';
 
+import GoogleMap from 'google-map-react';
+import GoogleMapReact from 'google-map-react';
+
+const AnyReactComponent = ({ lat, lng, text }) => <div><img src="../../../content/images/pin.png" /></div>;
+
 
 export type IPage13Prop = StateProps;
 
+// const defaultProps = {
+//   center: {
+//     lat: 59.95,
+//     lng: 30.33
+//   },
+//   zoom: 11
+// };
+
 {/* i18n: src/main/webapp/i18n */}
+
 export const Page13 = (props: IPage13Prop) => {
   const { account } = props;
+
   return (
     <Row>
       <Sidemenu/>
@@ -39,9 +54,20 @@ export const Page13 = (props: IPage13Prop) => {
         )}
           <p><GreenButton>地図アプリで見る</GreenButton></p>
           <div className="radius1">
-            <p>小さい地図小さい地図小さい地図</p>
-            <p>小さい地図小さい地図小さい地図</p>
-            <p>小さい地図小さい地図小さい地図</p>
+            <div  style={{ height: '300px', width: '100%' }}>
+              {/* AIzaSyAKl0y9oHbtrG8MzQ7k3DOUXdEHGT_rOscKUNI */}
+              <GoogleMapReact
+                bootstrapURLKeys={{ key: "" }}
+                defaultCenter={{lat: 35.7671479, lng: 139.8483769}}
+                defaultZoom={19}
+              >
+                <AnyReactComponent
+                  lat={35.7671479}
+                  lng={139.8483769}
+                  text="Laithai"
+                />
+              </GoogleMapReact>
+            </div>
           </div>
 
       </Col>
