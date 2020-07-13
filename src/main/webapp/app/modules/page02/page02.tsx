@@ -10,6 +10,7 @@ import { Sidemenu } from '../../shared/sidemenu/Sidemenu'
 
 import styled from 'styled-components';
 import { DefaultButton, initializeIcons } from '@fluentui/react';
+import { cpuUsage } from 'process';
 
 export type IPage02Prop = StateProps;
 
@@ -36,25 +37,47 @@ export const Page02 = (props: IPage02Prop) => {
         )}
 
         <div className="radius1">
-          <p>| メニュー＿＿必須＿＿＿＿＿＿＿＿＿＿＿＿＿＿変更</p>
-          <p>|＿未選択＿＿＿＿メニューを選択してください。</p>
+          <Row>
+            <Col md="3">
+              <h4>メニュー</h4>
+            </Col>
+            <Col md="5">必須</Col>
+            <Col >変更</Col>
+          </Row>
+          <Row>
+            <Col md="4">未選択</Col>
+            <Col>メニューを選択してください。</Col>
+          </Row>
         </div>
         <div className="radius1">
-          <p>｜＿スタッフ＿必須＿＿＿＿＿＿＿＿＿＿＿＿＿＿変更</p>
-          <p>｜＿＿指名しない</p>
-          <p>｜＿＿ご希望のメニュー、日時で対応可能なスタッフが対応します。</p>
-          <p>｜＿＿スタッフが対応します。</p>
+          <Row>
+            <Col md="3">
+              <h4>スタッフ</h4>
+            </Col>
+            <Col md="5">必須</Col>
+            <Col >変更</Col>
+          </Row>
+          <Row>
+            <Col md="3">
+              指名しない
+            </Col>
+            <Col>ご希望のメニュー、日時で対応可能なスタッフが対応します。</Col>
+          </Row>
         </div>
         <div className="radius1">
-          <p>｜＿スタッフ＿必須＿＿＿＿＿＿＿＿＿＿＿＿＿＿変更</p>
-          <p>｜＿＿指名しない</p>
-          <p>｜＿＿ご希望のメニュー、日時で対応可能なスタッフが対応します。</p>
-          <p>｜＿＿スタッフが対応します。</p>
-          <p>｜</p>
-        </div>
-        <div className="radius1">
-          <p>｜＿日時＿＿必須＿＿＿＿＿＿変更</p>
-          <p>｜＿未選択＿＿＿日時を選択してください。</p>
+          <Row>
+            <Col md="3">
+              <h4>日時</h4>
+            </Col>
+            <Col md="5">必須</Col>
+            <Col >変更</Col>
+          </Row>
+          <Row>
+            <Col md="3">
+              未選択
+            </Col>
+            <Col>日時を選択してください。</Col>
+          </Row>
         </div>
         <p></p>
         <RedButton>確定して確認画面へ進む</RedButton>

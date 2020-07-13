@@ -38,16 +38,52 @@ export const Page14 = (props: IPage14Prop) => {
           <div></div>
         )}
           <div className="radius1">
-            <h4>詳細情報</h4>
-            <RedButton>電話・ネット予約</RedButton><RedButton>電話番号・ネット予約へ進む</RedButton>
-            <p>定休日｜なし</p>
-            <p>営業時間｜１２：００～</p>
-            <p>住所｜〒〇〇〇-〇〇〇〇</p>
-            <GreenButton>地図を見る</GreenButton>
-            <p>参考予算</p>
-            <p>得意メニュー</p>
-            <p>エリア</p>
-            <p>設備サービス</p>
+            <Row>
+              <Col md="4">
+                <h4>詳細情報</h4>
+              </Col>
+              <Col>
+                <RedButton>電話</RedButton><RedButton>ネット予約へ進む</RedButton>
+              </Col>
+            </Row>
+            <Row>
+              <Col md="4">定休日</Col>
+              <Col>なし</Col>
+            </Row>
+            <Row>
+              <Col md="4">営業時間</Col>
+              <Col>１２：００～</Col>
+            </Row>
+            <Row>
+              <Col md="4">住所</Col>
+              <Col>
+                〒〇〇〇-〇〇〇〇
+              </Col>
+            </Row>
+            <Row>
+              <Col md="4"></Col>
+              <Col>
+                <GreenButton>
+                  地図を見る
+                </GreenButton>
+              </Col>
+            </Row>
+            <Row>
+              <Col md="4">参考予算</Col>
+              <Col></Col>
+            </Row>
+            <Row>
+              <Col md="4">得意メニュー</Col>
+              <Col></Col>
+            </Row>
+            <Row>
+              <Col md="4">エリア</Col>
+              <Col></Col>
+            </Row>
+            <Row>
+              <Col md="4">設備サービス</Col>
+              <Col></Col>
+            </Row>
           </div>
 
       </Col>
