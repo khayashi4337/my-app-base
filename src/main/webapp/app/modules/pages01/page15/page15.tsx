@@ -7,6 +7,9 @@ import { connect } from 'react-redux';
 import { Row, Col, Alert } from 'reactstrap';
 
 import { Sidemenu } from '../../../shared/sidemenu/Sidemenu'
+import styled from 'styled-components';
+import { DefaultButton, initializeIcons } from '@fluentui/react';
+
 
 export type IPage15Prop = StateProps;
 
@@ -34,25 +37,23 @@ export const Page15 = (props: IPage15Prop) => {
         ) : (
           <div></div>
         )}
-
-          <p></p>
-          <p></p>
-          <p></p>
-          <p></p>
-          <p></p>
-          <p></p>
-          <p></p>
-          <p></p>
-          <p></p>
-          <p></p>
-          <p></p>
-          <p></p>
-          <p></p>
-          <p></p>
-          <p></p>
-          <p></p>
-          <p></p>
-          <p></p>
+        <div className="radius1">
+          <p>2020年7月</p>
+          <p>＿日＿＿月＿＿火＿＿水＿＿木＿＿金＿＿土</p>
+          <p>＿＿＿＿＿＿＿＿＿＿１＿＿２＿＿３＿＿４</p>
+          <p>＿５＿＿６＿＿７＿＿８＿＿９＿１０＿１１</p>
+          <p>１２＿１３＿１４＿１５＿１６＿１７＿１８</p>
+          <p>１９＿２０＿２１＿２２＿２３＿２４＿２５</p>
+          <p>２６＿２７＿２８＿２９＿３０＿３１</p>
+        </div>
+        <p>□＿当日＿＿□＿選択した日付・時間</p>
+        <p></p>
+        <p>１５：００＿１５：３０＿１６：００＿１６：３０</p>
+        <p>１７：００＿１７：３０＿１８：００＿１８：３０</p>
+        <p>１９：００＿１９：３０＿２０：００＿２０：３０</p>
+        <p></p>
+        <p></p>
+        <p></p>
 
       </Col>
       {/* 右側のイラスト */}
@@ -71,3 +72,12 @@ const mapStateToProps = storeState => ({
 type StateProps = ReturnType<typeof mapStateToProps>;
 
 export default connect(mapStateToProps)(Page15);
+
+const RedButton = styled(DefaultButton)`
+  background-color: #FF0000;
+  color: #ffffff;
+  vertical-align: bottom;
+  margin-top: 10px;
+  margin-left: 10px;
+`;
+

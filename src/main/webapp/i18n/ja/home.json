@@ -17,14 +17,14 @@
     "github": "GitHub"
   },
   "page01": {
-    "title": "ようこそ, アプリコットのデモページ!",
+    "title": "予約日時",
     "subtitle": "ここはPage01です。",
     "logged": {
       "message": "\"{{username}}\"としてログインしています。"
     }
   },
   "page02": {
-    "title": "ようこそ, アプリコットのデモページ!",
+    "title": "予約内容選択",
     "subtitle": "ここはPage02です。",
     "logged": {
       "message": "\"{{username}}\"としてログインしています。"
@@ -38,14 +38,14 @@
     }
   },
   "page10": {
-    "title": "ようこそ, アプリコットのデモページ!",
+    "title": "指名可能なスタッフ",
     "subtitle": "ここはpage10です。",
     "logged": {
       "message": "\"{{username}}\"としてログインしています。"
     }
   },
   "page11": {
-    "title": "ようこそ, アプリコットのデモページ!",
+    "title": "メニューの選択",
     "subtitle": "ここはpage11です。",
     "logged": {
       "message": "\"{{username}}\"としてログインしています。"

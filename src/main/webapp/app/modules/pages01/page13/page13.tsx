@@ -7,6 +7,9 @@ import { connect } from 'react-redux';
 import { Row, Col, Alert } from 'reactstrap';
 
 import { Sidemenu } from '../../../shared/sidemenu/Sidemenu'
+import styled from 'styled-components';
+import { DefaultButton, initializeIcons } from '@fluentui/react';
+
 
 export type IPage13Prop = StateProps;
 
@@ -34,26 +37,12 @@ export const Page13 = (props: IPage13Prop) => {
         ) : (
           <div></div>
         )}
-
-          <p></p>
-          <p></p>
-          <p></p>
-          <p></p>
-          <p></p>
-          <p></p>
-          <p></p>
-          <p></p>
-          <p></p>
-          <p></p>
-          <p></p>
-          <p></p>
-          <p></p>
-          <p></p>
-          <p></p>
-          <p></p>
-          <p></p>
-          <p></p>
-
+          <p><GreenButton>地図アプリで見る</GreenButton></p>
+          <div className="radius1">
+            <p>小さい地図小さい地図小さい地図</p>
+            <p>小さい地図小さい地図小さい地図</p>
+            <p>小さい地図小さい地図小さい地図</p>
+          </div>
 
       </Col>
       {/* 右側のイラスト */}
@@ -72,3 +61,12 @@ const mapStateToProps = storeState => ({
 type StateProps = ReturnType<typeof mapStateToProps>;
 
 export default connect(mapStateToProps)(Page13);
+
+const GreenButton = styled(DefaultButton)`
+  background-color: green;
+  color: #ffffff;
+  vertical-align: bottom;
+  margin-top: 10px;
+  margin-left: 10px;
+`;
+

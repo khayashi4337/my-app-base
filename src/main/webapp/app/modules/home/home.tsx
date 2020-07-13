@@ -1,6 +1,7 @@
 import './home.scss';
 
 import React from 'react';
+import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 import { Translate } from 'react-jhipster';
 import { connect } from 'react-redux';
@@ -8,6 +9,8 @@ import { Row, Col, Alert } from 'reactstrap';
 import { Label } from '@fluentui/react';
 import { IRootState } from 'app/shared/reducers';
 import { Sidemenu } from '../../shared/sidemenu/Sidemenu'
+
+import { Image, DefaultButton, initializeIcons } from '@fluentui/react';
 
 export type IHomeProp = StateProps;
 
@@ -54,6 +57,64 @@ export const Home = (props: IHomeProp) => {
             </Alert>
           </div>
         )}
+          <h4>スペシャルメニュー</h4>
+          <div className="radius1">
+            <div className="radius2">全員</div>
+            <div className="radius2">足つぼ</div>
+            <div className="radius2">足裏・リフレクソロジー</div>
+            <p>【〇〇〇〇】〇〇〇〇〇〇〇〇〇〇</p>
+            <p>写真写真〇〇〇〇〇〇〇</p>
+            <p>写真写真〇〇〇〇〇〇〇〇〇〇</p>
+            <p>写真写真〇〇〇〇〇〇〇〇〇〇〇</p>
+            <Row>
+              <Col md="1"></Col>
+              <Col md="4">
+                <Inline>
+                  <img src="../../../content/images/clock.png" width="20px"/><span>８０分￥５，１１０</span>
+                </Inline>
+              </Col>
+              <Col>
+                <RedButton>
+                  <p>このメニューで予約</p>
+                </RedButton>
+              </Col>
+            </Row>
+
+            </div>
+          <p>すべてのメニューを見る</p>
+          <div className="radius1">
+            <p>お店からのメッセージ</p>
+            <p>「アクセス」〇〇〇〇〇〇〇〇〇〇〇〇</p>
+            <p>「駐輪場」〇〇〇〇〇〇〇〇〇〇〇〇</p>
+          </div>
+          <div className="radius1">
+            <p>口コミ</p>
+            <p>足裏★★★★★★5.0〇〇さん／５０代（男性）</p>
+            <p>〇〇〇〇〇〇〇〇〇〇</p>
+            <p>〇〇〇〇〇〇〇〇〇〇</p>
+            <p>すべての口コミを見る＞</p>
+            <p></p>
+          </div>
+          <div className="radius1">
+            <p>スタッフ</p>
+            <p>写真写真</p>
+            <p>写真写真</p>
+            <p>写真写真</p>
+            <p>〇〇〇〇〇〇</p>
+            <p>インストラクター</p>
+            <p>女性スタッフ</p>
+          </div>
+          <p>クーポン</p>
+          <RedButton>電話で予約</RedButton>
+          <RedButton>ネットで予約</RedButton>
+
+          <p></p>
+          <p></p>
+          <p></p>
+          <p></p>
+          <p></p>
+          <p></p>
+          <p></p>
 
         {/* <ul>
           <li>
@@ -79,3 +140,14 @@ const mapStateToProps = storeState => ({
 type StateProps = ReturnType<typeof mapStateToProps>;
 
 export default connect(mapStateToProps)(Home);
+
+const RedButton = styled(DefaultButton)`
+  background-color: #FF0000;
+  color: #ffffff;
+  vertical-align: bottom;
+  margin-left: 10px;
+`;
+
+const Inline = styled.div`
+  display: inline-block;
+`;

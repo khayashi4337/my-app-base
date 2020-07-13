@@ -35,25 +35,19 @@ export const Page10 = (props: IPage10Prop) => {
           <div></div>
         )}
 
+        <div className="radius1">
+          <p>指名可能なスタッフ＿０＿メイ</p>
+          <p>□指名可能なスタッフのみ表示</p>
           <p></p>
+          <p>指名しない</p>
+          <p>ご希望のメニュー、日時で対応可能なスタッフが対応します。</p>
           <p></p>
-          <p></p>
-          <p></p>
-          <p></p>
-          <p></p>
-          <p></p>
-          <p></p>
-          <p></p>
-          <p></p>
-          <p></p>
-          <p></p>
-          <p></p>
-          <p></p>
-          <p></p>
-          <p></p>
-          <p></p>
-          <p></p>
-
+        </div>
+        <div className="radius1">
+          <p>写真</p>
+          <p>NOW＿PRINTING＿＿＿＿＿＿＿スタッフ</p>
+          <p>＿＿＿＿＿＿＿＿＿＿＿＿＿＿女性スタッフ○○です</p>
+        </div>
       </Col>
       {/* 右側のイラスト */}
       <Col md="3" className="pad">

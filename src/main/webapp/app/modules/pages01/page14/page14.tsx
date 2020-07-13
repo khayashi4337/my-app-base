@@ -7,6 +7,9 @@ import { connect } from 'react-redux';
 import { Row, Col, Alert } from 'reactstrap';
 
 import { Sidemenu } from '../../../shared/sidemenu/Sidemenu'
+import styled from 'styled-components';
+import { DefaultButton, initializeIcons } from '@fluentui/react';
+
 
 export type IPage14Prop = StateProps;
 
@@ -34,26 +37,18 @@ export const Page14 = (props: IPage14Prop) => {
         ) : (
           <div></div>
         )}
-
-          <p></p>
-          <p></p>
-          <p></p>
-          <p></p>
-          <p></p>
-          <p></p>
-          <p></p>
-          <p></p>
-          <p></p>
-          <p></p>
-          <p></p>
-          <p></p>
-          <p></p>
-          <p></p>
-          <p></p>
-          <p></p>
-          <p></p>
-          <p></p>
-
+          <div className="radius1">
+            <h4>詳細情報</h4>
+            <RedButton>電話・ネット予約</RedButton><RedButton>電話番号・ネット予約へ進む</RedButton>
+            <p>定休日｜なし</p>
+            <p>営業時間｜１２：００～</p>
+            <p>住所｜〒〇〇〇-〇〇〇〇</p>
+            <GreenButton>地図を見る</GreenButton>
+            <p>参考予算</p>
+            <p>得意メニュー</p>
+            <p>エリア</p>
+            <p>設備サービス</p>
+          </div>
 
       </Col>
       {/* 右側のイラスト */}
@@ -72,3 +67,20 @@ const mapStateToProps = storeState => ({
 type StateProps = ReturnType<typeof mapStateToProps>;
 
 export default connect(mapStateToProps)(Page14);
+
+const RedButton = styled(DefaultButton)`
+  background-color: #FF0000;
+  color: #ffffff;
+  vertical-align: bottom;
+  margin-top: 10px;
+  margin-left: 10px;
+`;
+
+const GreenButton = styled(DefaultButton)`
+  background-color: green;
+  color: #ffffff;
+  vertical-align: bottom;
+  margin-top: 10px;
+  margin-left: 10px;
+`;
+
