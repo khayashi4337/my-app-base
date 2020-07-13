@@ -22,7 +22,7 @@ export const Home = (props: IHomeProp) => {
       <Sidemenu/>
       <Col md="7">
         <h2>
-          <Translate contentKey="home.title">ようこそ, アプリコットのデモページ!</Translate>
+          <Translate contentKey="home.title">ようこそ, 古式タイマッサージのライタイです!</Translate>
         </h2>
         <p className="lead">
           <Translate contentKey="home.subtitle">ここはトップページです。</Translate>
@@ -63,9 +63,15 @@ export const Home = (props: IHomeProp) => {
             <div className="radius2">足つぼ</div>
             <div className="radius2">足裏・リフレクソロジー</div>
             <p>【〇〇〇〇】〇〇〇〇〇〇〇〇〇〇</p>
-            <p>写真写真〇〇〇〇〇〇〇</p>
-            <p>写真写真〇〇〇〇〇〇〇〇〇〇</p>
-            <p>写真写真〇〇〇〇〇〇〇〇〇〇〇</p>
+            <Row>
+              <Col md="1"></Col>
+                <img src="../../../content/images/mock_photo.png" />
+              <Col>
+                <p>〇〇〇〇〇〇〇</p>
+                <p>〇〇〇〇〇〇〇〇〇〇</p>
+                <p>〇〇〇〇〇〇〇〇〇〇〇</p>
+              </Col>
+            </Row>
             <Row>
               <Col md="1"></Col>
               <Col md="4">
@@ -83,26 +89,30 @@ export const Home = (props: IHomeProp) => {
             </div>
           <p>すべてのメニューを見る</p>
           <div className="radius1">
-            <p>お店からのメッセージ</p>
+            <h4>お店からのメッセージ</h4>
             <p>「アクセス」〇〇〇〇〇〇〇〇〇〇〇〇</p>
             <p>「駐輪場」〇〇〇〇〇〇〇〇〇〇〇〇</p>
           </div>
           <div className="radius1">
-            <p>口コミ</p>
-            <p>足裏★★★★★★5.0〇〇さん／５０代（男性）</p>
+            <h4>口コミ</h4>
+            <div className="radius2">足裏</div>
+            <p>★★★★★★5.0〇〇さん／５０代（男性）</p>
             <p>〇〇〇〇〇〇〇〇〇〇</p>
             <p>〇〇〇〇〇〇〇〇〇〇</p>
             <p>すべての口コミを見る＞</p>
             <p></p>
           </div>
           <div className="radius1">
-            <p>スタッフ</p>
-            <p>写真写真</p>
-            <p>写真写真</p>
-            <p>写真写真</p>
-            <p>〇〇〇〇〇〇</p>
-            <p>インストラクター</p>
-            <p>女性スタッフ</p>
+            <h4>スタッフ</h4>
+            <Row>
+              <Col md="1"></Col>
+                <img src="../../../content/images/mock_photo.png" />
+              <Col>
+                <p>〇〇〇〇〇〇</p>
+                <p>インストラクター</p>
+                <p>女性スタッフ</p>
+              </Col>
+            </Row>
           </div>
           <p>クーポン</p>
           <RedButton>電話で予約</RedButton>

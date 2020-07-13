@@ -43,10 +43,15 @@ export const Page10 = (props: IPage10Prop) => {
           <p>ご希望のメニュー、日時で対応可能なスタッフが対応します。</p>
           <p></p>
         </div>
+        <h4>スタッフ</h4>
         <div className="radius1">
-          <p>写真</p>
-          <p>NOW＿PRINTING＿＿＿＿＿＿＿スタッフ</p>
-          <p>＿＿＿＿＿＿＿＿＿＿＿＿＿＿女性スタッフ○○です</p>
+          <Row>
+            <Col md="1"></Col>
+              <img src="../../../content/images/mock_photo.png" />
+            <Col>
+              <p>女性スタッフ○○です</p>
+            </Col>
+          </Row>
         </div>
       </Col>
       {/* 右側のイラスト */}
