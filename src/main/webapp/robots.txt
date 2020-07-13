@@ -8,5 +8,6 @@ Disallow: /api/audits/
 Disallow: /api/logs/
 Disallow: /api/users/
 Disallow: /api/page01/
+Disallow: /api/pages01/page02/
 Disallow: /management/
 Disallow: /v2/api-docs/
