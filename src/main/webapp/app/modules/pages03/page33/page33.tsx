@@ -1,4 +1,4 @@
-import './page02.scss';
+import './page33.scss';
 
 import React from 'react';
 import { Link } from 'react-router-dom';
@@ -8,25 +8,25 @@ import { Row, Col, Alert } from 'reactstrap';
 
 import { Sidemenu } from '../../../shared/sidemenu/Sidemenu'
 
-export type IPage02Prop = StateProps;
+export type IPage33Prop = StateProps;
 
 {/* i18n: src/main/webapp/i18n */}
-export const Page02 = (props: IPage02Prop) => {
+export const Page33 = (props: IPage33Prop) => {
   const { account } = props;
   return (
     <Row>
       <Sidemenu/>
       <Col md="7">
         <h2>
-          <Translate contentKey="page02.title">Page02タイトル</Translate>
+          <Translate contentKey="page33.title">Page33タイトル</Translate>
         </h2>
         <p className="lead">
-          <Translate contentKey="page02.subtitle">Page02サブタイトル</Translate>
+          <Translate contentKey="page33.subtitle">Page33サブタイトル</Translate>
         </p>
         {account && account.login ? (
           <div>
             <Alert color="success">
-              <Translate contentKey="page02.logged.message" interpolate={{ username: account.login }}>
+              <Translate contentKey="page33.logged.message" interpolate={{ username: account.login }}>
                 You are logged in as user {account.login}.
               </Translate>
             </Alert>
@@ -58,7 +58,7 @@ export const Page02 = (props: IPage02Prop) => {
       </Col>
       {/* 右側のイラスト */}
       <Col md="3" className="pad">
-        <span className="sideImgPage02 rounded" />
+        <span className="sideImgPage33 rounded" />
       </Col>
     </Row>
   );
@@ -71,4 +71,4 @@ const mapStateToProps = storeState => ({
 
 type StateProps = ReturnType<typeof mapStateToProps>;
 
-export default connect(mapStateToProps)(Page02);
+export default connect(mapStateToProps)(Page33);

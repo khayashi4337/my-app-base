@@ -9,7 +9,7 @@ import org.springframework.transaction.annotation.Transactional;
 import java.util.Optional;
 
 /**
- * Page01のサービスです。
+ * Page02のサービスです。
  * <p>
  */
 @Service

@@ -36,5 +36,215 @@
     "logged": {
       "message": "You are logged in as user \"{{username}}\"."
     }
+  },
+  "page10": {
+    "title": "Welcome, Applicot demo page.",
+    "subtitle": "This is page10",
+    "logged": {
+      "message": "You are logged in as user \"{{username}}\"."
+    }
+  },
+  "page11": {
+    "title": "Welcome, Applicot demo page.",
+    "subtitle": "This is page11",
+    "logged": {
+      "message": "You are logged in as user \"{{username}}\"."
+    }
+  },
+  "page12": {
+    "title": "Welcome, Applicot demo page.",
+    "subtitle": "This is page12",
+    "logged": {
+      "message": "You are logged in as user \"{{username}}\"."
+    }
+  },
+  "page13": {
+    "title": "Welcome, Applicot demo page.",
+    "subtitle": "This is page13",
+    "logged": {
+      "message": "You are logged in as user \"{{username}}\"."
+    }
+  },
+  "page14": {
+    "title": "Welcome, Applicot demo page.",
+    "subtitle": "This is page14",
+    "logged": {
+      "message": "You are logged in as user \"{{username}}\"."
+    }
+  },
+  "page15": {
+    "title": "Welcome, Applicot demo page.",
+    "subtitle": "This is page15",
+    "logged": {
+      "message": "You are logged in as user \"{{username}}\"."
+    }
+  },
+  "page16": {
+    "title": "Welcome, Applicot demo page.",
+    "subtitle": "This is page16",
+    "logged": {
+      "message": "You are logged in as user \"{{username}}\"."
+    }
+  },
+  "page17": {
+    "title": "Welcome, Applicot demo page.",
+    "subtitle": "This is page17",
+    "logged": {
+      "message": "You are logged in as user \"{{username}}\"."
+    }
+  },
+  "page18": {
+    "title": "Welcome, Applicot demo page.",
+    "subtitle": "This is page18",
+    "logged": {
+      "message": "You are logged in as user \"{{username}}\"."
+    }
+  },
+  "page19": {
+    "title": "Welcome, Applicot demo page.",
+    "subtitle": "This is page19",
+    "logged": {
+      "message": "You are logged in as user \"{{username}}\"."
+    }
+  },
+  "page20": {
+    "title": "Welcome, Applicot demo page.",
+    "subtitle": "This is page20",
+    "logged": {
+      "message": "You are logged in as user \"{{username}}\"."
+    }
+  },
+  "page21": {
+    "title": "Welcome, Applicot demo page.",
+    "subtitle": "This is page21",
+    "logged": {
+      "message": "You are logged in as user \"{{username}}\"."
+    }
+  },
+  "page22": {
+    "title": "Welcome, Applicot demo page.",
+    "subtitle": "This is page22",
+    "logged": {
+      "message": "You are logged in as user \"{{username}}\"."
+    }
+  },
+  "page23": {
+    "title": "Welcome, Applicot demo page.",
+    "subtitle": "This is page23",
+    "logged": {
+      "message": "You are logged in as user \"{{username}}\"."
+    }
+  },
+  "page24": {
+    "title": "Welcome, Applicot demo page.",
+    "subtitle": "This is page24",
+    "logged": {
+      "message": "You are logged in as user \"{{username}}\"."
+    }
+  },
+  "page25": {
+    "title": "Welcome, Applicot demo page.",
+    "subtitle": "This is page25",
+    "logged": {
+      "message": "You are logged in as user \"{{username}}\"."
+    }
+  },
+  "page26": {
+    "title": "Welcome, Applicot demo page.",
+    "subtitle": "This is page26",
+    "logged": {
+      "message": "You are logged in as user \"{{username}}\"."
+    }
+  },
+  "page27": {
+    "title": "Welcome, Applicot demo page.",
+    "subtitle": "This is page27",
+    "logged": {
+      "message": "You are logged in as user \"{{username}}\"."
+    }
+  },
+  "page28": {
+    "title": "Welcome, Applicot demo page.",
+    "subtitle": "This is page28",
+    "logged": {
+      "message": "You are logged in as user \"{{username}}\"."
+    }
+  },
+  "page29": {
+    "title": "Welcome, Applicot demo page.",
+    "subtitle": "This is page29",
+    "logged": {
+      "message": "You are logged in as user \"{{username}}\"."
+    }
+  },
+  "page30": {
+    "title": "Welcome, Applicot demo page.",
+    "subtitle": "This is page30",
+    "logged": {
+      "message": "You are logged in as user \"{{username}}\"."
+    }
+  },
+  "page31": {
+    "title": "Welcome, Applicot demo page.",
+    "subtitle": "This is page31",
+    "logged": {
+      "message": "You are logged in as user \"{{username}}\"."
+    }
+  },
+  "page32": {
+    "title": "Welcome, Applicot demo page.",
+    "subtitle": "This is page32",
+    "logged": {
+      "message": "You are logged in as user \"{{username}}\"."
+    }
+  },
+  "page33": {
+    "title": "Welcome, Applicot demo page.",
+    "subtitle": "This is page33",
+    "logged": {
+      "message": "You are logged in as user \"{{username}}\"."
+    }
+  },
+  "page34": {
+    "title": "Welcome, Applicot demo page.",
+    "subtitle": "This is page34",
+    "logged": {
+      "message": "You are logged in as user \"{{username}}\"."
+    }
+  },
+  "page35": {
+    "title": "Welcome, Applicot demo page.",
+    "subtitle": "This is page35",
+    "logged": {
+      "message": "You are logged in as user \"{{username}}\"."
+    }
+  },
+  "page36": {
+    "title": "Welcome, Applicot demo page.",
+    "subtitle": "This is page36",
+    "logged": {
+      "message": "You are logged in as user \"{{username}}\"."
+    }
+  },
+  "page37": {
+    "title": "Welcome, Applicot demo page.",
+    "subtitle": "This is page37",
+    "logged": {
+      "message": "You are logged in as user \"{{username}}\"."
+    }
+  },
+  "page38": {
+    "title": "Welcome, Applicot demo page.",
+    "subtitle": "This is page38",
+    "logged": {
+      "message": "You are logged in as user \"{{username}}\"."
+    }
+  },
+  "page39": {
+    "title": "Welcome, Applicot demo page.",
+    "subtitle": "This is page39",
+    "logged": {
+      "message": "You are logged in as user \"{{username}}\"."
+    }
   }
 }
