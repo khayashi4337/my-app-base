@@ -18,21 +18,21 @@
   },
   "page01": {
     "title": "ようこそ, アプリコットのデモページ!",
-    "subtitle": "ここはトップページです。",
+    "subtitle": "ここはPage01です。",
     "logged": {
       "message": "\"{{username}}\"としてログインしています。"
     }
   },
   "page02": {
     "title": "ようこそ, アプリコットのデモページ!",
-    "subtitle": "ここはトップページです。",
+    "subtitle": "ここはPage02です。",
     "logged": {
       "message": "\"{{username}}\"としてログインしています。"
     }
   },
   "page03": {
     "title": "ようこそ, アプリコットのデモページ!",
-    "subtitle": "ここはトップページです。",
+    "subtitle": "ここはPage03です。。",
     "logged": {
       "message": "\"{{username}}\"としてログインしています。"
     }

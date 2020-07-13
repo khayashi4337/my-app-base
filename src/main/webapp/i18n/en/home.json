@@ -18,21 +18,21 @@
   },
   "page01": {
     "title": "Welcome, Applicot demo page.",
-    "subtitle": "This is your homepage",
+    "subtitle": "This is page01",
     "logged": {
       "message": "You are logged in as user \"{{username}}\"."
     }
   },
   "page02": {
     "title": "Welcome, Applicot demo page.",
-    "subtitle": "This is your homepage",
+    "subtitle": "This is page02",
     "logged": {
       "message": "You are logged in as user \"{{username}}\"."
     }
   },
   "page03": {
     "title": "Welcome, Applicot demo page.",
-    "subtitle": "This is your homepage",
+    "subtitle": "This is page03",
     "logged": {
       "message": "You are logged in as user \"{{username}}\"."
     }

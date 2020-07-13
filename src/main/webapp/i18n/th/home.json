@@ -17,20 +17,20 @@
     "github": "GitHub"
   },
   "page01": {
-    "title": "ยินดีต้อนรับ, Applicot demo page!",
+    "title": "ยินดีต้อนรับ, Applicot demo page01!",
     "subtitle": "นี่คือหน้าเวปเพจของคุณ",
     "logged": {
       "message": "คุณได้เข้าระบบโดยใช้ชื่อ \"{{username}}\"."
     }
   },
   "page02": {
-    "title": "ยินดีต้อนรับ, Applicot demo page!",
+    "title": "ยินดีต้อนรับ, Applicot demo page02!",
     "subtitle": "นี่คือหน้าเวปเพจของคุณ",
     "logged": {
       "message": "คุณได้เข้าระบบโดยใช้ชื่อ \"{{username}}\"."
     },
     "page03": {
-      "title": "ยินดีต้อนรับ, Applicot demo page!",
+      "title": "ยินดีต้อนรับ, Applicot demo page03!",
       "subtitle": "นี่คือหน้าเวปเพจของคุณ",
       "logged": {
         "message": "คุณได้เข้าระบบโดยใช้ชื่อ \"{{username}}\"."
