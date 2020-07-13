@@ -1,0 +1,43 @@
+{
+  "generator-jhipster": {
+    "promptValues": {
+      "packageName": "jp.boy.java",
+      "nativeLanguage": "en"
+    },
+    "jhipsterVersion": "6.10.1",
+    "applicationType": "monolith",
+    "baseName": "my_app_base",
+    "packageName": "jp.boy.java",
+    "packageFolder": "jp/boy/java",
+    "serverPort": "8080",
+    "authenticationType": "jwt",
+    "cacheProvider": "ehcache",
+    "enableHibernateCache": false,
+    "websocket": "spring-websocket",
+    "databaseType": "sql",
+    "devDatabaseType": "mysql",
+    "prodDatabaseType": "mysql",
+    "searchEngine": false,
+    "messageBroker": "kafka",
+    "serviceDiscoveryType": false,
+    "buildTool": "gradle",
+    "enableSwaggerCodegen": true,
+    "jwtSecretKey": "MzY5NzNiNzQzMjZlYzI2ZmRjYWIwNWEwZTNiNjQ4ZGIxOTRhYzE2NmM1YTBiYzQ4YTg0ODQ5OTRmZDcyODk3OGMxZTNhNWVhZDRmNWRmNTIzNzE3MmYwYmVkMmZiNTg1MzMwN2Q5OGMwNzlmZGZiZjgwY2FjNTA1YzVmZWMxZGY=",
+    "embeddableLaunchScript": false,
+    "useSass": true,
+    "clientPackageManager": "npm",
+    "clientFramework": "react",
+    "clientTheme": "none",
+    "clientThemeVariant": "",
+    "creationTimestamp": 1594098571760,
+    "testFrameworks": ["cucumber"],
+    "jhiPrefix": "jhi",
+    "entitySuffix": "",
+    "dtoSuffix": "DTO",
+    "otherModules": [],
+    "enableTranslation": true,
+    "nativeLanguage": "en",
+    "languages": ["en", "ja", "th"],
+    "blueprints": []
+  }
+}
