@@ -10,7 +10,6 @@ import { Sidemenu } from '../../../shared/sidemenu/Sidemenu'
 import styled from 'styled-components';
 import { DefaultButton, initializeIcons } from '@fluentui/react';
 
-
 export type IPage15Prop = StateProps;
 
 {/* i18n: src/main/webapp/i18n */}
@@ -37,23 +36,153 @@ export const Page15 = (props: IPage15Prop) => {
         ) : (
           <div></div>
         )}
+
+
         <div className="radius1">
-          <p>2020年7月</p>
-          <p>＿日＿＿月＿＿火＿＿水＿＿木＿＿金＿＿土</p>
-          <p>＿＿＿＿＿＿＿＿＿＿１＿＿２＿＿３＿＿４</p>
-          <p>＿５＿＿６＿＿７＿＿８＿＿９＿１０＿１１</p>
-          <p>１２＿１３＿１４＿１５＿１６＿１７＿１８</p>
-          <p>１９＿２０＿２１＿２２＿２３＿２４＿２５</p>
-          <p>２６＿２７＿２８＿２９＿３０＿３１</p>
+          <h4>2020年7月</h4>
+          <Row>
+            <Col md="1">日</Col>
+            <Col md="1">月</Col>
+            <Col md="1">火</Col>
+            <Col md="1">水</Col>
+            <Col md="1">木</Col>
+            <Col md="1">金</Col>
+            <Col md="1">土</Col>
+          </Row>
+          <Row>
+            <Col md="1"></Col>
+            <Col md="1"></Col>
+            <Col md="1"></Col>
+            <Col md="1">01</Col>
+            <Col md="1">02</Col>
+            <Col md="1">03</Col>
+            <Col md="1">04</Col>
+          </Row>
+          <Row>
+            <Col md="1">05</Col>
+            <Col md="1">06</Col>
+            <Col md="1">07</Col>
+            <Col md="1">08</Col>
+            <Col md="1">09</Col>
+            <Col md="1">10</Col>
+            <Col md="1">11</Col>
+          </Row>
+          <Row>
+            <Col md="1">12</Col>
+            <Col md="1">13</Col>
+            <Col md="1">14</Col>
+            <Col md="1">15</Col>
+            <Col md="1">16</Col>
+            <Col md="1">17</Col>
+            <Col md="1">18</Col>
+          </Row>
+          <Row>
+            <Col md="1">19</Col>
+            <Col md="1">20</Col>
+            <Col md="1">21</Col>
+            <Col md="1">22</Col>
+            <Col md="1">23</Col>
+            <Col md="1">24</Col>
+            <Col md="1">25</Col>
+          </Row>
+          <Row>
+            <Col md="1">26</Col>
+            <Col md="1">27</Col>
+            <Col md="1">28</Col>
+            <Col md="1">29</Col>
+            <Col md="1">30</Col>
+            <Col md="1">31</Col>
+            <Col md="1"></Col>
+          </Row>
         </div>
+
+
+        <div className="radius1">
+          <h4>2020年8月</h4>
+          <Row>
+            <Col md="1">日</Col>
+            <Col md="1">月</Col>
+            <Col md="1">火</Col>
+            <Col md="1">水</Col>
+            <Col md="1">木</Col>
+            <Col md="1">金</Col>
+            <Col md="1">土</Col>
+          </Row>
+          <Row>
+            <Col md="1"></Col>
+            <Col md="1"></Col>
+            <Col md="1"></Col>
+            <Col md="1"></Col>
+            <Col md="1"></Col>
+            <Col md="1"></Col>
+            <Col md="1">01</Col>
+          </Row>
+          <Row>
+            <Col md="1">02</Col>
+            <Col md="1">03</Col>
+            <Col md="1">04</Col>
+            <Col md="1">05</Col>
+            <Col md="1">06</Col>
+            <Col md="1">07</Col>
+            <Col md="1">08</Col>
+          </Row>
+          <Row>
+            <Col md="1">09</Col>
+            <Col md="1">10</Col>
+            <Col md="1">11</Col>
+            <Col md="1">12</Col>
+            <Col md="1">13</Col>
+            <Col md="1">14</Col>
+            <Col md="1">15</Col>
+          </Row>
+          <Row>
+            <Col md="1">16</Col>
+            <Col md="1">17</Col>
+            <Col md="1">18</Col>
+            <Col md="1">19</Col>
+            <Col md="1">20</Col>
+            <Col md="1">21</Col>
+            <Col md="1">22</Col>
+          </Row>
+          <Row>
+            <Col md="1">23</Col>
+            <Col md="1">24</Col>
+            <Col md="1">25</Col>
+            <Col md="1">26</Col>
+            <Col md="1">27</Col>
+            <Col md="1">28</Col>
+            <Col md="1">29</Col>
+          </Row>
+          <Row>
+            <Col md="1">30</Col>
+            <Col md="1">31</Col>
+            <Col md="1"></Col>
+            <Col md="1"></Col>
+            <Col md="1"></Col>
+            <Col md="1"></Col>
+            <Col md="1"></Col>
+          </Row>
+        </div>
+
         <p>□＿当日＿＿□＿選択した日付・時間</p>
-        <p></p>
-        <p>１５：００＿１５：３０＿１６：００＿１６：３０</p>
-        <p>１７：００＿１７：３０＿１８：００＿１８：３０</p>
-        <p>１９：００＿１９：３０＿２０：００＿２０：３０</p>
-        <p></p>
-        <p></p>
-        <p></p>
+        <Row>
+          <Col md="1"><div className="radius3">15:00</div></Col>
+          <Col md="1"><div className="radius3">15:30</div></Col>
+          <Col md="1"><div className="radius3">16:00</div></Col>
+          <Col md="1"><div className="radius3">16:30</div></Col>
+        </Row>
+        <Row>
+          <Col md="1"><div className="radius3">17:00</div></Col>
+          <Col md="1"><div className="radius3">17:30</div></Col>
+          <Col md="1"><div className="radius3">18:00</div></Col>
+          <Col md="1"><div className="radius3">18:30</div></Col>
+        </Row>
+        <Row>
+          <Col md="1"><div className="radius3">19:00</div></Col>
+          <Col md="1"><div className="radius3">19:30</div></Col>
+          <Col md="1"><div className="radius3">20:00</div></Col>
+          <Col md="1"><div className="radius3">20:30</div></Col>
+        </Row>
 
       </Col>
       {/* 右側のイラスト */}

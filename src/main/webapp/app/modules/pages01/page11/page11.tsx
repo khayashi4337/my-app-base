@@ -9,7 +9,15 @@ import { Row, Col, Alert } from 'reactstrap';
 import { Sidemenu } from '../../../shared/sidemenu/Sidemenu'
 
 import styled from 'styled-components';
-import { DefaultButton, initializeIcons } from '@fluentui/react';
+import { Checkbox, DefaultButton, initializeIcons } from '@fluentui/react';
+import { cpuUsage } from 'process';
+
+initializeIcons();
+
+function _onChange(ev: React.FormEvent<HTMLElement>, isChecked: boolean) {
+  // eslint-disable-next-line no-console
+  console.log(`The option has been changed to ${isChecked}.`);
+}
 
 export type IPage11Prop = StateProps;
 
@@ -39,10 +47,31 @@ export const Page11 = (props: IPage11Prop) => {
         )}
           <div className="radius1">
             <h4>メニューの絞り込み</h4>
-            <p>□整体□ボディケア</p>
-            <p>□リンパマッサージ□オイルマッサージ</p>
-            <p>□足つぼ・足裏リフレクソロジー</p>
-            <GreenButton>閉じる</GreenButton>
+            <Row>
+              <Col md="5">
+                <Checkbox label="整体" onChange={_onChange} />
+              </Col>
+              <Col>
+                <Checkbox label="ボディケア" onChange={_onChange} />
+              </Col>
+            </Row>
+            <Row>
+              <Col md="5">
+                <Checkbox label="リンパマッサージ" onChange={_onChange} />
+              </Col>
+              <Col>
+                <Checkbox label="オイルマッサージ" onChange={_onChange} />
+              </Col>
+            </Row>
+
+            <Row>
+              <Col md="8">
+                <Checkbox label="足つぼ・足裏リフレクソロジー" onChange={_onChange} />
+              </Col>
+              <Col>
+                <GreenButton>閉じる</GreenButton>
+              </Col>
+            </Row>
           </div>
           <h4>スペシャルメニュー</h4>
           <div className="radius1">
@@ -71,6 +100,7 @@ export const Page11 = (props: IPage11Prop) => {
     </Row>
   );
 };
+
 
 const mapStateToProps = storeState => ({
   account: storeState.authentication.account,

@@ -7,6 +7,14 @@ import { connect } from 'react-redux';
 import { Row, Col, Alert } from 'reactstrap';
 
 import { Sidemenu } from '../../../shared/sidemenu/Sidemenu'
+import { Checkbox, DefaultButton, initializeIcons } from '@fluentui/react';
+
+initializeIcons();
+
+function _onChange(ev: React.FormEvent<HTMLElement>, isChecked: boolean) {
+  // eslint-disable-next-line no-console
+  console.log(`The option has been changed to ${isChecked}.`);
+}
 
 export type IPage10Prop = StateProps;
 
@@ -37,7 +45,11 @@ export const Page10 = (props: IPage10Prop) => {
 
         <div className="radius1">
           <p>指名可能なスタッフ０名</p>
-          <p>□指名可能なスタッフのみ表示</p>
+          <Row>
+            <Col>
+              <Checkbox label="指名可能なスタッフのみ表示" onChange={_onChange} />
+            </Col>
+          </Row>
           <Row>
             <Col md="3">
               指名しない
