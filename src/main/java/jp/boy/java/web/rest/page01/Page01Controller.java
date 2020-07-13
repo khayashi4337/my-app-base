@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.*;
 
 
 /**
- * REST controller for getting the {@link Page01}s.
+ * コントローラ　 {@link Page01Response}用.
  */
 @RestController
 @RequestMapping("/api/page01")
@@ -19,13 +19,13 @@ public class Page01Controller {
     }
 
     /**
-     * {@code GET  /page01/:id} : get an {@link Page01} by id.
+     * {@code GET  /page01/:id} : get an {@link Page01Response} by id.
      *
      * @param id the id of the entity to get.
-     * @return the {@link ResponseEntity} with status {@code 200 (OK)} and the {@link Page01} in body, or status {@code 404 (Not Found)}.
+     * @return the {@link ResponseEntity} with status {@code 200 (OK)} and the {@link Page01Response} in body, or status {@code 404 (Not Found)}.
      */
     @GetMapping("/{id:.+}")
-    public ResponseEntity<Page01> get(@PathVariable Long id) {
+    public ResponseEntity<Page01Response> get(@PathVariable Long id) {
         return ResponseUtil.wrapOrNotFound(page01Service.find(id));
     }
 

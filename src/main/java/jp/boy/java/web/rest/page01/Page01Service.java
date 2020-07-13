@@ -9,9 +9,8 @@ import org.springframework.transaction.annotation.Transactional;
 import java.util.Optional;
 
 /**
- * Service for managing audit events.
+ * Page01のサービスです。
  * <p>
- * This is the default implementation to support SpringBoot Actuator {@code Page01Repository}.
  */
 @Service
 @Transactional
@@ -27,12 +26,9 @@ public class Page01Service {
         this.jHipsterProperties = jhipsterProperties;
     }
 
-
-
-
     @Transactional(readOnly = true)
-    public Optional<Page01> find(Long id) {
-        Page01 page01 = new Page01(id + "");
-        return Optional.of(page01);
+    public Optional<Page01Response> find(Long id) {
+        Page01Response page01Response = new Page01Response(id + "");
+        return Optional.of(page01Response);
     }
 }

@@ -2,11 +2,14 @@ package jp.boy.java.web.rest.page01;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 
-public class Page01 {
+/**
+ * Page01のレスポンスです。
+ */
+public class Page01Response {
 
     private String value;
 
-    Page01(String value) {
+    Page01Response(String value) {
         this.value = value;
     }
 
