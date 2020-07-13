@@ -16,22 +16,42 @@ export const Page01 = (props: IPage01Prop) => {
     <Row>
       <Sidemenu/>
       <Col md="7">
-        <p>2020年7月</p>
-        <p>　日　　月　　火　　水　　木　　金　　土</p>
-        <p>　　　　　　　　　　１　　２　　３　　４</p>
-        <p>　５　　６　　７　　８　　９　１０　１１</p>
-        <p>１２　１３　１４　１５　１６　１７　１８</p>
-        <p>１９　２０　２１　２２　２３　２４　２５</p>
-        <p>２６　２７　２８　２９　３０　３１</p>
-        <p></p>
-        <p>□　当日　　□　選択した日付・時間</p>
-        <p></p>
-        <p>１５：００　１５：３０　１６：００　１６：３０</p>
-        <p>１７：００　１７：３０　１８：００　１８：３０</p>
-        <p>１９：００　１９：３０　２０：００　２０：３０</p>
-        <p></p>
-        <p></p>
-        <p></p>
+        <h2>
+          <Translate contentKey="page01.title">Page01タイトル</Translate>
+        </h2>
+        <p className="lead">
+          <Translate contentKey="page01.subtitle">Page01サブタイトル</Translate>
+        </p>
+        {account && account.login ? (
+          <div>
+            <Alert color="success">
+              <Translate contentKey="page01.logged.message" interpolate={{ username: account.login }}>
+                You are logged in as user {account.login}.
+              </Translate>
+            </Alert>
+          </div>
+        ) : (
+          <div>
+            <Alert color="warning">
+              <Translate contentKey="global.messages.info.authenticated.prefix">If you want to </Translate>
+              <Link to="/login" className="alert-link">
+                <Translate contentKey="global.messages.info.authenticated.link"> sign in</Translate>
+              </Link>
+              <Translate contentKey="global.messages.info.authenticated.suffix">
+                , you can try the default accounts:
+                <br />- Administrator (login=&quot;admin&quot; and password=&quot;admin&quot;)
+                <br />- User (login=&quot;user&quot; and password=&quot;user&quot;).
+              </Translate>
+            </Alert>
+
+            <Alert color="warning">
+              <Translate contentKey="global.messages.info.register.noaccount">You do not have an account yet?</Translate>&nbsp;
+              <Link to="/account/register" className="alert-link">
+                <Translate contentKey="global.messages.info.register.link">Register a new account</Translate>
+              </Link>
+            </Alert>
+          </div>
+        )}
 
 
       </Col>
