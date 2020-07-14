@@ -9,7 +9,8 @@ import { Row, Col, Alert } from 'reactstrap';
 import { Sidemenu } from '../../../shared/sidemenu/Sidemenu'
 
 import styled from 'styled-components';
-import { Checkbox, DefaultButton, initializeIcons } from '@fluentui/react';
+import { DefaultButton, initializeIcons } from '@fluentui/react';
+import { Checkbox } from '@fluentui/react';
 import { cpuUsage } from 'process';
 
 initializeIcons();

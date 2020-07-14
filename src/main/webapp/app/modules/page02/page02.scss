@@ -10,7 +10,6 @@ Main page styles
 }
 
 div.radius1 {
-
   border: 2px solid green;
   border-radius: 6px;
   margin-top: 10px;
@@ -19,4 +18,31 @@ div.radius1 {
   //height: 150px;
   padding: 10px;
   display: inline-block;
+}
+
+div.radiusRed {
+  border: 1px solid red;
+  border-radius: 6px;
+  margin-top: 10px;
+  margin-right: 10px;
+  // width: 600px;
+  height: 30px;
+  padding: 10px;
+  display: inline-block;
+}
+
+.label-danger {
+  background-color: #d9534f;
+}
+.label {
+  display: inline;
+  padding: 0.2em 0.6em 0.3em;
+  font-size: 75%;
+  font-weight: 700;
+  line-height: 1;
+  color: #fff;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+  border-radius: 0.25em;
 }

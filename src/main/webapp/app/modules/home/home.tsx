@@ -87,7 +87,7 @@ export const Home = (props: IHomeProp) => {
             </Row>
 
             </div>
-          <p>すべてのメニューを見る</p>
+          <p><GreenButton>すべてのメニューを見る</GreenButton></p>
           <div className="radius1">
             <h4>お店からのメッセージ</h4>
             <p>「アクセス」〇〇〇〇〇〇〇〇〇〇〇〇</p>
@@ -154,6 +154,13 @@ export default connect(mapStateToProps)(Home);
 const RedButton = styled(DefaultButton)`
   background-color: #FF0000;
   color: #ffffff;
+  vertical-align: bottom;
+  margin-left: 10px;
+`;
+
+const GreenButton = styled(DefaultButton)`
+background-color: green;
+color: #ffffff;
   vertical-align: bottom;
   margin-left: 10px;
 `;

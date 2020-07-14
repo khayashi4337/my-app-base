@@ -10,9 +10,38 @@ import { Sidemenu } from '../../shared/sidemenu/Sidemenu'
 
 import styled from 'styled-components';
 import { DefaultButton, initializeIcons } from '@fluentui/react';
+import { IStackTokens, Stack, Dropdown, DropdownMenuItemType, IDropdownStyles, IDropdownOption, Fabric} from '@fluentui/react';
 import { cpuUsage } from 'process';
 
+
 export type IPage02Prop = StateProps;
+
+initializeIcons();
+const dropdownStyles: Partial<IDropdownStyles> = {
+  dropdown: { width: 300 },
+};
+
+const stackTokens: IStackTokens = { childrenGap: 20 };
+
+const options: IDropdownOption[] = [
+  { key: 'fruitsHeader', text: 'Fruits', itemType: DropdownMenuItemType.Header },
+  { key: 'apple', text: 'Apple' },
+  { key: 'banana', text: 'Banana' },
+  { key: 'orange', text: 'Orange', disabled: true },
+  { key: 'grape', text: 'Grape' },
+  { key: 'divider_1', text: '-', itemType: DropdownMenuItemType.Divider },
+  { key: 'vegetablesHeader', text: 'Vegetables', itemType: DropdownMenuItemType.Header },
+  { key: 'broccoli', text: 'Broccoli' },
+  { key: 'carrot', text: 'Carrot' },
+  { key: 'lettuce', text: 'Lettuce' },
+];
+
+
+function _onChange(ev: React.FormEvent<HTMLElement>, isChecked: boolean) {
+  // eslint-disable-next-line no-console
+  console.log(`The option has been changed to ${isChecked}.`);
+}
+
 
 export const Page02 = (props: IPage02Prop) => {
   const { account } = props;
@@ -23,6 +52,9 @@ export const Page02 = (props: IPage02Prop) => {
         <h2>
           <Translate contentKey="page02.title">Page02タイトル</Translate>
         </h2>
+        <p className="lead">
+          <Translate contentKey="page02.subtitle">Page02サブタイトル</Translate>
+        </p>
         {account && account.login ? (
           <div>
             <Alert color="success">
@@ -41,21 +73,23 @@ export const Page02 = (props: IPage02Prop) => {
             <Col md="3">
               <h4>メニュー</h4>
             </Col>
-            <Col md="5">必須</Col>
-            <Col >変更</Col>
+            <Col md="5"><span className="label label-danger">必須</span></Col>
+            <Col ><BlueButton>変更</BlueButton></Col>
           </Row>
-          <Row>
-            <Col md="4">未選択</Col>
-            <Col>メニューを選択してください。</Col>
-          </Row>
+          <Dropdown
+            placeholder="メニューを選択してください。"
+            label="メニュー"
+            options={options}
+            styles={dropdownStyles}
+          />
         </div>
         <div className="radius1">
           <Row>
             <Col md="3">
               <h4>スタッフ</h4>
             </Col>
-            <Col md="5">必須</Col>
-            <Col >変更</Col>
+            <Col md="5"><span className="label label-danger">必須</span></Col>
+            <Col ><BlueButton>変更</BlueButton></Col>
           </Row>
           <Row>
             <Col md="3">
@@ -69,8 +103,8 @@ export const Page02 = (props: IPage02Prop) => {
             <Col md="3">
               <h4>日時</h4>
             </Col>
-            <Col md="5">必須</Col>
-            <Col >変更</Col>
+            <Col md="5"><span className="label label-danger">必須</span></Col>
+            <Col ><BlueButton>変更</BlueButton></Col>
           </Row>
           <Row>
             <Col md="3">
@@ -106,4 +140,12 @@ const RedButton = styled(DefaultButton)`
   vertical-align: bottom;
   margin-left: 10px;
   margin-top: 10px;
+`;
+
+const BlueButton = styled(DefaultButton)`
+  background-color: blue;
+  color: #ffffff;
+  vertical-align: bottom;
+  margin-top: 10px;
+  margin-left: 10px;
 `;

@@ -9,6 +9,12 @@ import { Row, Col, Alert } from 'reactstrap';
 import { Sidemenu } from '../../../shared/sidemenu/Sidemenu'
 import styled from 'styled-components';
 import { DefaultButton, initializeIcons } from '@fluentui/react';
+import { Checkbox } from '@fluentui/react';
+
+function _onChange(ev: React.FormEvent<HTMLElement>, isChecked: boolean) {
+  // eslint-disable-next-line no-console
+  console.log(`The option has been changed to ${isChecked}.`);
+}
 
 export type IPage15Prop = StateProps;
 
@@ -164,7 +170,14 @@ export const Page15 = (props: IPage15Prop) => {
           </Row>
         </div>
 
-        <p>□＿当日＿＿□＿選択した日付・時間</p>
+        <Row>
+          <Col md="1">
+            <Checkbox label="当日" onChange={_onChange} />
+          </Col>
+          <Col>
+            <Checkbox label="選択した日付・時間" onChange={_onChange} />
+          </Col>
+        </Row>
         <Row>
           <Col md="1"><div className="radius3">15:00</div></Col>
           <Col md="1"><div className="radius3">15:30</div></Col>
