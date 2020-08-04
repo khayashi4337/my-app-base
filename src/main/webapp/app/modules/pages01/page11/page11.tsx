@@ -46,34 +46,6 @@ export const Page11 = (props: IPage11Prop) => {
         ) : (
           <div></div>
         )}
-          <div className="radius1">
-            <h4>メニューの絞り込み</h4>
-            <Row>
-              <Col md="5">
-                <Checkbox label="整体" onChange={_onChange} />
-              </Col>
-              <Col>
-                <Checkbox label="ボディケア" onChange={_onChange} />
-              </Col>
-            </Row>
-            <Row>
-              <Col md="5">
-                <Checkbox label="リンパマッサージ" onChange={_onChange} />
-              </Col>
-              <Col>
-                <Checkbox label="オイルマッサージ" onChange={_onChange} />
-              </Col>
-            </Row>
-
-            <Row>
-              <Col md="8">
-                <Checkbox label="足つぼ・足裏リフレクソロジー" onChange={_onChange} />
-              </Col>
-              <Col>
-                <GreenButton>閉じる</GreenButton>
-              </Col>
-            </Row>
-          </div>
           <h4>スペシャルメニュー</h4>
           <div className="radius1">
             <div className="radius2">リピート</div>
@@ -91,6 +63,43 @@ export const Page11 = (props: IPage11Prop) => {
               </Col>
             </Row>
           </div>
+
+          <h4>スペシャルメニュー</h4>
+          <div className="radius1">
+            <div className="radius2">リピート</div>
+            <div className="radius2">整体</div>
+            <div className="radius2">ボディケア</div>
+            <div className="radius2">足つぼ・足裏・リフレクソロジー</div>
+            <h4>整体６０分＋足つぼ３０分</h4>
+            <p>利用条件：「楽天～」を見たとお伝えください。</p>
+            <Row>
+              <Col md="1"></Col>
+              <Col md="4">
+                <Inline>
+                  <img src="../../../content/images/clock.png" width="20px"/><span>９０分￥５，７２０</span>
+                </Inline>
+              </Col>
+            </Row>
+          </div>
+
+          <h4>スペシャルメニュー</h4>
+          <div className="radius1">
+            <div className="radius2">リピート</div>
+            <div className="radius2">整体</div>
+            <div className="radius2">ボディケア</div>
+            <div className="radius2">足つぼ・足裏・リフレクソロジー</div>
+            <h4>整体６０分＋足つぼ３０分</h4>
+            <p>利用条件：「楽天～」を見たとお伝えください。</p>
+            <Row>
+              <Col md="1"></Col>
+              <Col md="4">
+                <Inline>
+                  <img src="../../../content/images/clock.png" width="20px"/><span>９０分￥５，７２０</span>
+                </Inline>
+              </Col>
+            </Row>
+          </div>
+
           <p>合計０分／０円<RedButton>選択内容の確認</RedButton> </p>
 
       </Col>

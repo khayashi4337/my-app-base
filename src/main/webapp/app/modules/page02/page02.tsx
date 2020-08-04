@@ -83,6 +83,7 @@ export const Page02 = (props: IPage02Prop) => {
             styles={dropdownStyles}
           />
         </div>
+        {/**
         <div className="radius1">
           <Row>
             <Col md="3">
@@ -98,6 +99,7 @@ export const Page02 = (props: IPage02Prop) => {
             <Col>ご希望のメニュー、日時で対応可能なスタッフが対応します。</Col>
           </Row>
         </div>
+         */}
         <div className="radius1">
           <Row>
             <Col md="3">

@@ -8,3 +8,13 @@ Main page styles
   background: url('../../../../content/images/applicot.jpg') no-repeat center top;
   background-size: contain;
 }
+div.radiusPage21 {
+  border: 2px solid green;
+  border-radius: 6px;
+  margin-top: 10px;
+  margin-right: 10px;
+  width: 600px;
+  //height: 150px;
+  padding: 20px;
+  display: inline-block;
+}
