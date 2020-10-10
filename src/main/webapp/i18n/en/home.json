@@ -86,8 +86,8 @@
     }
   },
   "page15": {
-    "title": "Welcome, Applicot demo page.",
-    "subtitle": "This is page15",
+    "title": "Massage reservation",
+    "subtitle": "Select the day you want to reserve from the calendar, and then select the reservation time. If the reservation is full, the button will not be displayed.",
     "logged": {
       "message": "You are logged in as user \"{{username}}\"."
     }
