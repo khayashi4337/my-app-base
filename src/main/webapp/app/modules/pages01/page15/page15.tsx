@@ -114,75 +114,11 @@ export const Page15 = (props: IPage15Prop) => {
 
 
         <div className="radius1">
-          <MyCalendar title="2020年5月"/>
+          <MyCalendar title="2020年7月"/>
         </div>
 
-
         <div className="radius1">
-          <h4>2020年8月</h4>
-          <Row>
-            <Col md="1">日</Col>
-            <Col md="1">月</Col>
-            <Col md="1">火</Col>
-            <Col md="1">水</Col>
-            <Col md="1">木</Col>
-            <Col md="1">金</Col>
-            <Col md="1">土</Col>
-          </Row>
-          <Row>
-            <Col md="1"></Col>
-            <Col md="1"></Col>
-            <Col md="1"></Col>
-            <Col md="1"></Col>
-            <Col md="1"></Col>
-            <Col md="1"></Col>
-            <Col md="1">01</Col>
-          </Row>
-          <Row>
-            <Col md="1">02</Col>
-            <Col md="1">03</Col>
-            <Col md="1">04</Col>
-            <Col md="1">05</Col>
-            <Col md="1">06</Col>
-            <Col md="1">07</Col>
-            <Col md="1">08</Col>
-          </Row>
-          <Row>
-            <Col md="1">09</Col>
-            <Col md="1">10</Col>
-            <Col md="1">11</Col>
-            <Col md="1">12</Col>
-            <Col md="1">13</Col>
-            <Col md="1">14</Col>
-            <Col md="1">15</Col>
-          </Row>
-          <Row>
-            <Col md="1">16</Col>
-            <Col md="1">17</Col>
-            <Col md="1">18</Col>
-            <Col md="1">19</Col>
-            <Col md="1">20</Col>
-            <Col md="1">21</Col>
-            <Col md="1">22</Col>
-          </Row>
-          <Row>
-            <Col md="1">23</Col>
-            <Col md="1">24</Col>
-            <Col md="1">25</Col>
-            <Col md="1">26</Col>
-            <Col md="1">27</Col>
-            <Col md="1">28</Col>
-            <Col md="1">29</Col>
-          </Row>
-          <Row>
-            <Col md="1">30</Col>
-            <Col md="1">31</Col>
-            <Col md="1"></Col>
-            <Col md="1"></Col>
-            <Col md="1"></Col>
-            <Col md="1"></Col>
-            <Col md="1"></Col>
-          </Row>
+          <MyCalendar title="2020年8月"/>
         </div>
 
         <Row>
