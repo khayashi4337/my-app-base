@@ -60,6 +60,13 @@ public class MyAppBaseApp {
      * @param args the command line arguments.
      */
     public static void main(String[] args) {
+
+        // TODO
+        // 後で削除
+        // LineDemo demo = new LineDemo();
+        // demo.run(args);
+        // System.exit(0);
+
         SpringApplication app = new SpringApplication(MyAppBaseApp.class);
         DefaultProfileUtil.addDefaultProfile(app);
         try {

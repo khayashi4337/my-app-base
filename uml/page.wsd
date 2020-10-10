@@ -1,0 +1,55 @@
+@startuml
+
+package shop {
+    class TopPage
+
+    class Home
+
+    class ShopMap
+
+    class ShopInfo
+
+    class Calendar
+
+}
+
+package massergePage {
+
+    class StaffNominate
+
+    class Reservation
+
+
+    class MassageMenuLiset
+
+    class MassergeMenu
+
+}
+
+package manager {
+
+    class ReservationStatus
+
+    class Sales
+
+}
+
+package staff {
+    class StaffAttendance
+
+    class StaffInfo
+
+    class Course {
+        start
+        end
+    }
+
+}
+
+class CalenarComponent {
+
+}
+
+
+
+@enduml
