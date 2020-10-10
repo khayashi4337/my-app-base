@@ -3,6 +3,7 @@ import './page20.scss';
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Translate } from 'react-jhipster';
+import { translate } from 'react-jhipster'
 import { connect } from 'react-redux';
 import { Row, Col, Alert } from 'reactstrap';
 
@@ -18,7 +19,7 @@ export const Page20 = (props: IPage20Prop) => {
       <Sidemenu/>
       <Col md="7">
         <h2>
-          <Translate contentKey="page20.title">Page20タイトル</Translate>
+  <Translate contentKey="page20.title">Page20タイトル</Translate>
         </h2>
         <p className="lead">
           <Translate contentKey="page20.subtitle">Page20サブタイトル</Translate>
@@ -35,9 +36,20 @@ export const Page20 = (props: IPage20Prop) => {
           <div></div>
         )}
 
+          <p>〇月〇日</p>
+          <p>スタッフ数_３人</p>
+          <Row md="4">
+            <Col md="1">+.-</Col> <Col md="1">△△▲</Col> <Col md="2"> 1人 </Col> <Col md="2">15:00</Col>
+          </Row>
+          <Row md="4">
+            <Col md="1">+.-</Col> <Col md="1">△▲▲</Col> <Col md="2"> 2人 </Col> <Col md="2">20:30</Col>
+          </Row>
           <p></p>
-          <p></p>
-          <p></p>
+          <p>〇月〇日</p>
+          <p>スタッフ数_３人</p>
+          <Row md="4">
+            <Col md="1">+.-</Col> <Col md="1">△△▲</Col> <Col md="2"> 1人 </Col> <Col md="2">15:00</Col>
+          </Row>
           <p></p>
           <p></p>
           <p></p>

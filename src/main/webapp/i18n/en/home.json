@@ -1,5 +1,18 @@
 {
+  "pages00": {
+    "nav": "トップページ"
+  },
+  "pages01": {
+    "nav": "マッサージページ"
+  },
+  "pages02": {
+    "nav": "マネージャーページ"
+  },
+  "pages03": {
+    "nav": "スタッフページ"
+  },
   "home": {
+    "nav": "home_nav",
     "title": "Welcome, Applicot demo page.",
     "subtitle": "This is your homepage",
     "logged": {
