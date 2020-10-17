@@ -14,7 +14,7 @@ import { DefaultButton} from '@fluentui/react';
 import { Checkbox } from '@fluentui/react';
 
 import { DateRangeType } from 'office-ui-fabric-react/lib/Calendar';
-
+import { TimeButton } from 'app/modules/calendar/timeButton';
 
 function _onChange(ev: React.FormEvent<HTMLElement>, isChecked: boolean) {
   // eslint-disable-next-line no-console
@@ -69,7 +69,7 @@ export const Page15 = (props: IPage15Prop) => {
         <Row>
           <Col md="1"><div className="radius3">15:00</div></Col>
           <Col md="1"><div className="radius3">15:30</div></Col>
-          <Col md="1"><div className="radius3">16:00</div></Col>
+          <TimeButton value="16:01" />
           <Col md="1"><div className="radius3">16:30</div></Col>
         </Row>
         <Row>
