@@ -1,0 +1,20 @@
+@startuml
+
+skinparam actorStyle awesome
+
+actor Customer
+(メニュー画面) ----> Customer
+(空き時間) ----> Customer
+Customer ----> (予約)
+Customer ----> (Lineチャンネル登録)
+
+actor Manager
+Manager <--- (予約通知)
+Manager ---> (Stuff登録)
+Manager <--- (Stuff一覧)
+
+
+actor Staff
+Staff <--- (予約通知)
+
+@enduml

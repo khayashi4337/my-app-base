@@ -12,12 +12,20 @@ export class TimeButtonParam {
   }
 }
 
+export class TimeButtonProp {
+  readonly timeButtonParam: TimeButtonParam;
+
+  constructor(timeButtonParam: TimeButtonParam) {
+    this.timeButtonParam = timeButtonParam;
+  }
+}
+
 /*
  * 時間ボタン
  */
-export const TimeButton = (timeButtonParam: TimeButtonParam) => {
+export const TimeButton = (timeButtonProp: TimeButtonProp) => {
   return (
-  <Col md="1"><div className="radius3">{ timeButtonParam.value }</div></Col>
+  <Col md="1"><div className="radius3">{ timeButtonProp.timeButtonParam.value }</div></Col>
   );
 }
 

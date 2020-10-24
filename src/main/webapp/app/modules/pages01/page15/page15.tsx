@@ -14,7 +14,7 @@ import { DefaultButton} from '@fluentui/react';
 import { Checkbox } from '@fluentui/react';
 
 import { DateRangeType } from 'office-ui-fabric-react/lib/Calendar';
-import { TimeButton } from 'app/modules/calendar/timeButton';
+import { TimeButton, TimeButtonParam } from 'app/modules/calendar/timeButton';
 
 function _onChange(ev: React.FormEvent<HTMLElement>, isChecked: boolean) {
   // eslint-disable-next-line no-console
@@ -28,7 +28,8 @@ export type IPage15Prop = StateProps;
 export const Page15 = (props: IPage15Prop) => {
   const { account } = props;
 
-  const dateRangeType: DateRangeType = DateRangeType.Month;
+  // 実験的に、コンポーネント化したインスタンスを事前に生成した場合の例
+  const timeButtonParam = new TimeButtonParam("16:02");
 
   return (
     <Row>
@@ -68,8 +69,8 @@ export const Page15 = (props: IPage15Prop) => {
         </Row>
         <Row>
           <Col md="1"><div className="radius3">15:00</div></Col>
-          <Col md="1"><div className="radius3">15:30</div></Col>
-          <TimeButton value="16:01" />
+          <TimeButton timeButtonParam={ new TimeButtonParam("15:33") } />
+          <TimeButton timeButtonParam={ timeButtonParam } />
           <Col md="1"><div className="radius3">16:30</div></Col>
         </Row>
         <Row>
