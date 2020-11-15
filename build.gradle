@@ -220,6 +220,10 @@ repositories {
 }
 
 dependencies {
+	// LINE SDK
+	// implementation 'com.linecorp.bot:line-bot-spring-boot:4.2.0'
+    compile('com.linecorp.bot:line-bot-spring-boot:4.2.0')
+
     // import JHipster dependencies BOM
     if (!project.hasProperty("gae")) {
         implementation platform("io.github.jhipster:jhipster-dependencies:${jhipster_dependencies_version}")

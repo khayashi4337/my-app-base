@@ -66,6 +66,12 @@ spring:
 server:
   port: 8080
 
+# LINE SDK
+line:
+  bot:
+    channel-token: dummy
+    channel-secret: dummy
+
 # ===================================================================
 # JHipster specific properties
 #
