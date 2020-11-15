@@ -224,6 +224,10 @@ dependencies {
     if (!project.hasProperty("gae")) {
         implementation platform("io.github.jhipster:jhipster-dependencies:${jhipster_dependencies_version}")
     }
+    
+	// https://mvnrepository.com/artifact/com.moandjiezana.toml/toml4j
+	// https://github.com/mwanji/toml4j
+	compile group: 'com.moandjiezana.toml', name: 'toml4j', version: '0.7.2'    
 
     // Use ", version: jhipster_dependencies_version, changing: true" if you want
     // to use a SNAPSHOT release instead of a stable release

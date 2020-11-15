@@ -12,6 +12,7 @@ import java.net.ProtocolException;
 import java.net.URL;
 
 import jp.boy.java.common.BaseAppException;
+import jp.boy.java.common.Json;
 import jp.boy.java.common.LineList;
 
 /**
