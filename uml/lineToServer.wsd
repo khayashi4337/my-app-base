@@ -1,0 +1,13 @@
+@startuml
+
+Controller1 <---> GlovalIP : IPAddless
+Controller1 ---> GAS1 : IPAddles
+GAS1 ---> Spread : IPAddles
+User ---> Line
+Line ---> Webhook
+Webhook ---> GAS2
+GAS2 ---> doPost
+Spread ---> doPost : IPAddles
+doPost ---> Controller2
+
+@enduml
