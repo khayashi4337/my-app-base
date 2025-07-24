@@ -1,12 +1,31 @@
 {
   "name": "my-app-base",
   "version": "0.0.1-SNAPSHOT",
-  "description": "Description for my_app_base",
   "private": true,
+  "description": "Description for my_app_base",
   "license": "UNLICENSED",
-  "cacheDirectories": [
-    "node_modules"
-  ],
+  "scripts": {
+    "cleanup": "rimraf build/resources/main/static/",
+    "jest": "jest --coverage --logHeapUsage --maxWorkers=2 --config src/test/javascript/jest.conf.js",
+    "jest:update": "npm run jest -- --updateSnapshot",
+    "lint": "eslint . --ext .js,.ts,.jsx,.tsx",
+    "lint:fix": "npm run lint -- --fix",
+    "prettier:format": "prettier --write \"{,src/**/}*.{md,json,ts,tsx,css,scss,yml}\"",
+    "start": "npm run webpack:dev",
+    "start-tls": "npm run webpack:dev -- --env.tls",
+    "test": "npm run lint && npm run jest",
+    "test-ci": "npm run lint && npm run jest:update",
+    "test:watch": "npm test -- --watch",
+    "webpack": "node --max_old_space_size=4096 node_modules/webpack/bin/webpack.js",
+    "webpack-dev-server": "node --max_old_space_size=4096 node_modules/webpack-dev-server/bin/webpack-dev-server.js",
+    "webpack:build": "npm run cleanup && npm run webpack:build:main",
+    "webpack:build:main": "npm run webpack -- --config webpack/webpack.dev.js --env.stats=minimal",
+    "webpack:dev": "npm run webpack-dev-server -- --config webpack/webpack.dev.js --inline --port=9060 --env.stats=minimal",
+    "webpack:dev-verbose": "npm run webpack-dev-server -- --config webpack/webpack.dev.js --inline --port=9060 --profile --progress --env.stats=normal",
+    "webpack:prod": "npm run cleanup && npm run webpack:prod:main",
+    "webpack:prod:main": "npm run webpack -- --config webpack/webpack.prod.js --profile",
+    "webpack:test": "npm run test"
+  },
   "dependencies": {
     "@fluentui/react": "^7.121.11",
     "@fortawesome/fontawesome-svg-core": "1.2.28",
@@ -15,8 +34,9 @@
     "availity-reactstrap-validation": "2.6.1",
     "axios": "0.19.2",
     "bootstrap": "4.4.1",
+    "google-map-react": "^1.1.7",
     "loaders.css": "0.1.2",
-    "lodash": "4.17.15",
+    "lodash": "4.17.19",
     "moment": "2.24.0",
     "react": "16.13.1",
     "react-dom": "16.13.1",
@@ -122,28 +142,9 @@
   "engines": {
     "node": ">=12.16.1"
   },
-  "scripts": {
-    "prettier:format": "prettier --write \"{,src/**/}*.{md,json,ts,tsx,css,scss,yml}\"",
-    "lint": "eslint . --ext .js,.ts,.jsx,.tsx",
-    "lint:fix": "npm run lint -- --fix",
-    "cleanup": "rimraf build/resources/main/static/",
-    "start": "npm run webpack:dev",
-    "start-tls": "npm run webpack:dev -- --env.tls",
-    "jest": "jest --coverage --logHeapUsage --maxWorkers=2 --config src/test/javascript/jest.conf.js",
-    "jest:update": "npm run jest -- --updateSnapshot",
-    "test": "npm run lint && npm run jest",
-    "test-ci": "npm run lint && npm run jest:update",
-    "test:watch": "npm test -- --watch",
-    "webpack:dev": "npm run webpack-dev-server -- --config webpack/webpack.dev.js --inline --port=9060 --env.stats=minimal",
-    "webpack:dev-verbose": "npm run webpack-dev-server -- --config webpack/webpack.dev.js --inline --port=9060 --profile --progress --env.stats=normal",
-    "webpack:build:main": "npm run webpack -- --config webpack/webpack.dev.js --env.stats=minimal",
-    "webpack:build": "npm run cleanup && npm run webpack:build:main",
-    "webpack:prod:main": "npm run webpack -- --config webpack/webpack.prod.js --profile",
-    "webpack:prod": "npm run cleanup && npm run webpack:prod:main",
-    "webpack:test": "npm run test",
-    "webpack-dev-server": "node --max_old_space_size=4096 node_modules/webpack-dev-server/bin/webpack-dev-server.js",
-    "webpack": "node --max_old_space_size=4096 node_modules/webpack/bin/webpack.js"
-  },
+  "cacheDirectories": [
+    "node_modules"
+  ],
   "jestSonar": {
     "reportPath": "build/test-results/jest",
     "reportFile": "TESTS-results-sonar.xml"

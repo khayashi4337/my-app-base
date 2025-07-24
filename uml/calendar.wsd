@@ -1,0 +1,62 @@
+@startuml
+
+package libcalendar {
+    class Calendar
+
+    class DayOfWeek
+
+    class DateRangeType
+
+}
+
+
+package libbutton {
+    class DefaultButton
+}
+
+
+class DateTimeUtilties {
+    addDays
+    getDateRangeArray
+}
+
+interface ICalendarInlineExampleProps {
+  isMonthPickerVisible?: boolean;
+  dateRangeType: DateRangeType;
+  autoNavigateOnSelection: boolean;
+  showGoToToday: boolean;
+  showNavigateButtons?: boolean;
+  highlightCurrentMonth?: boolean;
+  highlightSelectedMonth?: boolean;
+  isDayPickerVisible?: boolean;
+  showMonthPickerAsOverlay?: boolean;
+  showWeekNumbers?: boolean;
+  minDate?: Date;
+  maxDate?: Date;
+  restrictedDates?: Date[];
+  showSixWeeksByDefault?: boolean;
+  workWeekDays?: DayOfWeek[];
+  firstDayOfWeek?: DayOfWeek;
+}
+
+class DayPickerStrings {
+    months
+    shortMonths
+    days
+    shrotDays
+    gotoToday
+    weekNumberFormatString: 'Week number {0}',
+    prevMonthAriaLabel: 'Previous month',
+    nextMonthAriaLabel: 'Next month',
+    prevYearAriaLabel: 'Previous year',
+    nextYearAriaLabel: 'Next year',
+    prevYearRangeAriaLabel: 'Previous year range',
+    nextYearRangeAriaLabel: 'Next year range',
+    closeButtonAriaLabel: 'Close',
+    monthPickerHeaderAriaLabel: '{0}, select to change the year',
+    yearPickerHeaderAriaLabel: '{0}, select to change the month',
+}
+
+class CalendarInlineExample
+
+@enduml

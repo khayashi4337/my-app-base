@@ -1,5 +1,18 @@
 {
+  "pages00": {
+    "nav": "トップページ"
+  },
+  "pages01": {
+    "nav": "マッサージページ"
+  },
+  "pages02": {
+    "nav": "マネージャーページ"
+  },
+  "pages03": {
+    "nav": "スタッフページ"
+  },
   "home": {
+    "nav": "home_nav_th",
     "title": "ยินดีต้อนรับ, Applicot demo page!",
     "subtitle": "นี่คือหน้าเวปเพจของคุณ",
     "logged": {
@@ -17,6 +30,7 @@
     "github": "GitHub"
   },
   "page01": {
+    "nav": "",
     "title": "ยินดีต้อนรับ, Applicot demo page01!",
     "subtitle": "นี่คือหน้าเวปเพจของคุณ",
     "logged": {
@@ -24,12 +38,14 @@
     }
   },
   "page02": {
+    "nav": "",
     "title": "ยินดีต้อนรับ, Applicot demo page02!",
     "subtitle": "นี่คือหน้าเวปเพจของคุณ",
     "logged": {
       "message": "คุณได้เข้าระบบโดยใช้ชื่อ \"{{username}}\"."
     },
     "page03": {
+      "nav": "",
       "title": "ยินดีต้อนรับ, Applicot demo page03!",
       "subtitle": "นี่คือหน้าเวปเพจของคุณ",
       "logged": {
@@ -38,6 +54,7 @@
     }
   },
   "page10": {
+    "nav": "",
     "title": "ยินดีต้อนรับ, Applicot demo page10!",
     "subtitle": "นี่คือหน้าเวปเพจของคุณ",
     "logged": {
@@ -45,6 +62,7 @@
     }
   },
   "page11": {
+    "nav": "",
     "title": "ยินดีต้อนรับ, Applicot demo page11!",
     "subtitle": "นี่คือหน้าเวปเพจของคุณ",
     "logged": {
@@ -52,6 +70,7 @@
     }
   },
   "page12": {
+    "nav": "",
     "title": "ยินดีต้อนรับ, Applicot demo page12!",
     "subtitle": "นี่คือหน้าเวปเพจของคุณ",
     "logged": {
@@ -59,6 +78,7 @@
     }
   },
   "page13": {
+    "nav": "",
     "title": "ยินดีต้อนรับ, Applicot demo page13!",
     "subtitle": "นี่คือหน้าเวปเพจของคุณ",
     "logged": {
@@ -66,6 +86,7 @@
     }
   },
   "page14": {
+    "nav": "",
     "title": "ยินดีต้อนรับ, Applicot demo page14!",
     "subtitle": "นี่คือหน้าเวปเพจของคุณ",
     "logged": {
@@ -73,6 +94,7 @@
     }
   },
   "page15": {
+    "nav": "",
     "title": "ยินดีต้อนรับ, Applicot demo page15!",
     "subtitle": "นี่คือหน้าเวปเพจของคุณ",
     "logged": {
@@ -80,6 +102,7 @@
     }
   },
   "page16": {
+    "nav": "",
     "title": "ยินดีต้อนรับ, Applicot demo page16!",
     "subtitle": "นี่คือหน้าเวปเพจของคุณ",
     "logged": {
@@ -87,6 +110,7 @@
     }
   },
   "page17": {
+    "nav": "",
     "title": "ยินดีต้อนรับ, Applicot demo page17!",
     "subtitle": "นี่คือหน้าเวปเพจของคุณ",
     "logged": {
@@ -94,6 +118,7 @@
     }
   },
   "page18": {
+    "nav": "",
     "title": "ยินดีต้อนรับ, Applicot demo page18!",
     "subtitle": "นี่คือหน้าเวปเพจของคุณ",
     "logged": {
@@ -101,6 +126,7 @@
     }
   },
   "page19": {
+    "nav": "",
     "title": "ยินดีต้อนรับ, Applicot demo page19!",
     "subtitle": "นี่คือหน้าเวปเพจของคุณ",
     "logged": {
@@ -108,6 +134,7 @@
     }
   },
   "page20": {
+    "nav": "",
     "title": "ยินดีต้อนรับ, Applicot demo page20!",
     "subtitle": "นี่คือหน้าเวปเพจของคุณ",
     "logged": {
@@ -115,6 +142,7 @@
     }
   },
   "page21": {
+    "nav": "",
     "title": "ยินดีต้อนรับ, Applicot demo page21!",
     "subtitle": "นี่คือหน้าเวปเพจของคุณ",
     "logged": {
@@ -122,6 +150,7 @@
     }
   },
   "page22": {
+    "nav": "",
     "title": "ยินดีต้อนรับ, Applicot demo page22!",
     "subtitle": "นี่คือหน้าเวปเพจของคุณ",
     "logged": {
@@ -129,6 +158,7 @@
     }
   },
   "page23": {
+    "nav": "",
     "title": "ยินดีต้อนรับ, Applicot demo page23!",
     "subtitle": "นี่คือหน้าเวปเพจของคุณ",
     "logged": {
@@ -136,6 +166,7 @@
     }
   },
   "page24": {
+    "nav": "",
     "title": "ยินดีต้อนรับ, Applicot demo page24!",
     "subtitle": "นี่คือหน้าเวปเพจของคุณ",
     "logged": {
@@ -143,6 +174,7 @@
     }
   },
   "page25": {
+    "nav": "",
     "title": "ยินดีต้อนรับ, Applicot demo page25!",
     "subtitle": "นี่คือหน้าเวปเพจของคุณ",
     "logged": {
@@ -150,6 +182,7 @@
     }
   },
   "page26": {
+    "nav": "",
     "title": "ยินดีต้อนรับ, Applicot demo page26!",
     "subtitle": "นี่คือหน้าเวปเพจของคุณ",
     "logged": {
@@ -157,6 +190,7 @@
     }
   },
   "page27": {
+    "nav": "",
     "title": "ยินดีต้อนรับ, Applicot demo page27!",
     "subtitle": "นี่คือหน้าเวปเพจของคุณ",
     "logged": {
@@ -164,6 +198,7 @@
     }
   },
   "page28": {
+    "nav": "",
     "title": "ยินดีต้อนรับ, Applicot demo page28!",
     "subtitle": "นี่คือหน้าเวปเพจของคุณ",
     "logged": {
@@ -171,6 +206,7 @@
     }
   },
   "page29": {
+    "nav": "",
     "title": "ยินดีต้อนรับ, Applicot demo page29!",
     "subtitle": "นี่คือหน้าเวปเพจของคุณ",
     "logged": {
@@ -178,6 +214,7 @@
     }
   },
   "page30": {
+    "nav": "",
     "title": "ยินดีต้อนรับ, Applicot demo page30!",
     "subtitle": "นี่คือหน้าเวปเพจของคุณ",
     "logged": {
@@ -185,6 +222,7 @@
     }
   },
   "page31": {
+    "nav": "",
     "title": "ยินดีต้อนรับ, Applicot demo page31!",
     "subtitle": "นี่คือหน้าเวปเพจของคุณ",
     "logged": {
@@ -192,6 +230,7 @@
     }
   },
   "page32": {
+    "nav": "",
     "title": "ยินดีต้อนรับ, Applicot demo page32!",
     "subtitle": "นี่คือหน้าเวปเพจของคุณ",
     "logged": {
@@ -199,6 +238,7 @@
     }
   },
   "page33": {
+    "nav": "",
     "title": "ยินดีต้อนรับ, Applicot demo page33!",
     "subtitle": "นี่คือหน้าเวปเพจของคุณ",
     "logged": {
@@ -206,6 +246,7 @@
     }
   },
   "page34": {
+    "nav": "",
     "title": "ยินดีต้อนรับ, Applicot demo page34!",
     "subtitle": "นี่คือหน้าเวปเพจของคุณ",
     "logged": {
@@ -213,6 +254,7 @@
     }
   },
   "page35": {
+    "nav": "",
     "title": "ยินดีต้อนรับ, Applicot demo page35!",
     "subtitle": "นี่คือหน้าเวปเพจของคุณ",
     "logged": {
@@ -220,6 +262,7 @@
     }
   },
   "page36": {
+    "nav": "",
     "title": "ยินดีต้อนรับ, Applicot demo page36!",
     "subtitle": "นี่คือหน้าเวปเพจของคุณ",
     "logged": {
@@ -227,6 +270,7 @@
     }
   },
   "page37": {
+    "nav": "",
     "title": "ยินดีต้อนรับ, Applicot demo page37!",
     "subtitle": "นี่คือหน้าเวปเพจของคุณ",
     "logged": {
@@ -234,6 +278,7 @@
     }
   },
   "page38": {
+    "nav": "",
     "title": "ยินดีต้อนรับ, Applicot demo page38!",
     "subtitle": "นี่คือหน้าเวปเพจของคุณ",
     "logged": {
@@ -241,6 +286,7 @@
     }
   },
   "page39": {
+    "nav": "",
     "title": "ยินดีต้อนรับ, Applicot demo page39!",
     "subtitle": "นี่คือหน้าเวปเพจของคุณ",
     "logged": {

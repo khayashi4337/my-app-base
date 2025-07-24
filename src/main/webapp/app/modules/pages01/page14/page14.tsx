@@ -7,6 +7,9 @@ import { connect } from 'react-redux';
 import { Row, Col, Alert } from 'reactstrap';
 
 import { Sidemenu } from '../../../shared/sidemenu/Sidemenu'
+import styled from 'styled-components';
+import { DefaultButton, initializeIcons } from '@fluentui/react';
+
 
 export type IPage14Prop = StateProps;
 
@@ -34,26 +37,54 @@ export const Page14 = (props: IPage14Prop) => {
         ) : (
           <div></div>
         )}
-
-          <p></p>
-          <p></p>
-          <p></p>
-          <p></p>
-          <p></p>
-          <p></p>
-          <p></p>
-          <p></p>
-          <p></p>
-          <p></p>
-          <p></p>
-          <p></p>
-          <p></p>
-          <p></p>
-          <p></p>
-          <p></p>
-          <p></p>
-          <p></p>
-
+          <div className="radius1">
+            <Row>
+              <Col md="4">
+                <h4>詳細情報</h4>
+              </Col>
+              <Col>
+                <RedButton>電話</RedButton><RedButton>ネット予約へ進む</RedButton>
+              </Col>
+            </Row>
+            <Row>
+              <Col md="4">定休日</Col>
+              <Col>なし</Col>
+            </Row>
+            <Row>
+              <Col md="4">営業時間</Col>
+              <Col>１２：００～</Col>
+            </Row>
+            <Row>
+              <Col md="4">住所</Col>
+              <Col>
+                〒〇〇〇-〇〇〇〇
+              </Col>
+            </Row>
+            <Row>
+              <Col md="4"></Col>
+              <Col>
+                <GreenButton>
+                  地図を見る
+                </GreenButton>
+              </Col>
+            </Row>
+            <Row>
+              <Col md="4">参考予算</Col>
+              <Col></Col>
+            </Row>
+            <Row>
+              <Col md="4">得意メニュー</Col>
+              <Col></Col>
+            </Row>
+            <Row>
+              <Col md="4">エリア</Col>
+              <Col></Col>
+            </Row>
+            <Row>
+              <Col md="4">設備サービス</Col>
+              <Col></Col>
+            </Row>
+          </div>
 
       </Col>
       {/* 右側のイラスト */}
@@ -72,3 +103,20 @@ const mapStateToProps = storeState => ({
 type StateProps = ReturnType<typeof mapStateToProps>;
 
 export default connect(mapStateToProps)(Page14);
+
+const RedButton = styled(DefaultButton)`
+  background-color: #FF0000;
+  color: #ffffff;
+  vertical-align: bottom;
+  margin-top: 10px;
+  margin-left: 10px;
+`;
+
+const GreenButton = styled(DefaultButton)`
+  background-color: green;
+  color: #ffffff;
+  vertical-align: bottom;
+  margin-top: 10px;
+  margin-left: 10px;
+`;
+
