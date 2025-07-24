@@ -1,0 +1,156 @@
+@startuml
+
+package bot {
+    class LineBotClient {
+
+    }
+
+    class TextMessage
+    class CaluseruMessage
+    class ConfirmMessage
+    LineBotClient o--- TextMessage
+    LineBotClient o--- CaluseruMessage
+    LineBotClient o--- ConfirmMessage
+
+}
+
+
+class Customer {
+    nickname
+    birth
+    alermFlg
+    alermMinuite
+}
+
+class ReserveItem {
+    customer
+    date
+    course
+}
+Customer ---o ReserveItem
+
+package line {
+    class LineChannel {
+        webHook
+    }
+    class LineAction {
+
+    }
+    class WebHook {
+
+    }
+    class LineUserId
+
+}
+Customer ----> LineChannel
+
+
+LineChannel <--- LineBotClient
+
+package course {
+    class CourseMenu {
+
+    }
+    class CourseMenuParam {
+        courseMenu
+    }
+    class CourseService {
+        courseLogic
+    }
+    class CourseLogic {
+
+    }
+    CourseLogic o--- CourseService
+    CourseLogic --- CourseMenu
+    CourseService ---> CourseMenuParam
+    LineBotClient <---- CourseMenuParam
+
+    entity Course {
+
+    }
+    CourseMenu ---* Course
+
+}
+
+
+package api {
+    package action_api {
+        class  LineActionController  {
+            endpoint
+            reserveService
+        }
+
+        class ReserveResponse
+         LineActionController  ---> ReserveResponse
+        ReserveResponse ---> LineBotClient
+
+        class ReserveParam {
+            reserveItem
+        }
+        ReserveParam <---  LineActionController
+        ReserveParam ---o reserveItem
+
+    }
+}
+
+
+package schedule {
+    class Calendar {
+
+    }
+
+    class ScheduleDay {
+
+    }
+    ScheduleDay *--- Calendar
+
+    class Time30MinuitsBlock {
+        staffCapacity
+    }
+    ScheduleDay ---* Time30MinuitsBlock
+
+    class StaffCapacity {
+
+    }
+    StaffCapacity ----o Time30MinuitsBlock
+    class CalendarResponse {
+        calendar
+    }
+    Calendar ---o CalendarResponse
+}
+
+
+
+WebHook ---o LineChannel
+
+WebHook <---- LineAction
+Customer ----> LineAction
+
+
+CalendarResponse ---> LineBotClient
+
+LineActionController  <--- LineAction
+LineAction <---- ReserveItem
+
+package staff {
+    entity Staff {
+        nickname
+        lineUserId
+        active
+    }
+    class StaffDayly {
+        date
+        staff
+        workStartTime
+        workEndTime
+    }
+    Staff ----o StaffDayly
+    class StaffList {
+
+    }
+    StaffList ---* Staff
+
+}
+
+LineUserId ---o Staff
+@enduml

@@ -1,0 +1,29 @@
+@startuml
+
+skinparam actorStyle awesome
+
+actor Customer
+(メニュー画面) ----> Customer
+(空き時間) ----> Customer
+Customer ----> (予約)
+Customer ----> (指名予約)
+Customer ----> (まもなく時間の登録)
+Customer ----> (Lineチャンネル登録)
+Customer ----> (ニックネームと誕生日の登録)
+Customer ----> (アラームオンオフ)
+(予約の確認) ----> Customer
+(まもなくのお知らせ) ----> Customer
+
+actor Manager
+Manager <--- (予約通知)
+Manager <--- (電話予約)
+Manager ---> (スタッフにお知らせ)
+Manager ---> (キャパシティ人数編集)
+Manager ---> (シフト表確認)
+
+actor Staff
+Staff <--- (電話予約)
+Staff ---> (キャパシティ人数編集)
+Staff ---> (シフト可能入力)
+
+@enduml

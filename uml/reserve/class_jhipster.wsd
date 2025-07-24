@@ -1,0 +1,173 @@
+@startuml
+
+package jhipster {
+
+    package reserve {
+        class ReserveService {
+
+        }
+        ReserveService ---o  ReserveParam
+
+        class ReserveLogic {
+
+        }
+        ReserveLogic ---o ReserveService
+
+        class ReserveRepository {
+
+        }
+        ReserveRepository ---o ReserveLogic
+
+        database Reserve {
+
+        }
+        Reserve --- ReserveRepository
+    }
+
+
+    package capacity {
+        class StaffCapacityService {
+
+        }
+        StaffCapacityService ---o  StaffCapacity
+
+        class StaffCapacityLogic {
+
+        }
+        StaffCapacityLogic ---o StaffCapacityService
+
+        class StaffCapacityRepository {
+
+        }
+        StaffCapacityRepository ---o StaffCapacityLogic
+
+
+
+        database StaffCapacities {
+
+        }
+        StaffCapacities --- StaffCapacityRepository
+    }
+
+
+    package customer {
+        class CustomerService {
+
+        }
+        CustomerService ---o  Customer
+
+        class CustomerLogic {
+
+        }
+        CustomerLogic ---o CustomerService
+
+        class CustomerRepository {
+
+        }
+        CustomerRepository ---o CustomerLogic
+
+
+        database Customers {
+
+        }
+        Customers --- CustomerRepository
+    }
+
+    package course {
+        class CourseService {
+
+        }
+        CourseService ---o  Course
+
+        class CourseLogic {
+
+        }
+        CourseLogic ---o CourseService
+
+        class CourseRepository {
+
+        }
+        CourseRepository ---o CourseLogic
+
+
+        database Courses {
+
+        }
+        Courses --- CourseRepository
+    }
+
+    package staffSkill {
+        class StaffSkillService {
+
+        }
+        StaffSkillService ---o  StaffSkill
+
+        class StaffSkillLogic {
+
+        }
+        StaffSkillLogic ---o StaffSkillService
+
+        class StaffSkillRepository {
+
+        }
+        StaffSkillRepository ---o StaffSkillLogic
+
+
+        database StaffSkills {
+
+        }
+        StaffSkills --- StaffSkillRepository
+    }
+
+
+
+    package staff {
+        class StaffService {
+
+        }
+        StaffService ---o  Staff
+
+        class StaffLogic {
+
+        }
+        StaffLogic ---o StaffService
+
+        class StaffRepository {
+
+        }
+        StaffRepository ---o StaffLogic
+
+
+        database Staffs {
+
+        }
+        Staffs --- StaffRepository
+    }
+
+    package staffdayly {
+        class StaffDaylyService {
+
+        }
+        StaffDaylyService ---o  StaffDayly
+
+        class StaffDaylyLogic {
+
+        }
+        StaffDaylyLogic ---o StaffDaylyService
+
+        class StaffDaylyRepository {
+
+        }
+        StaffDaylyRepository ---o StaffDaylyLogic
+
+
+        database StaffDaylys {
+
+        }
+        StaffDaylys --- StaffDaylyRepository
+    }
+
+
+}
+
+@enduml

@@ -220,10 +220,18 @@ repositories {
 }
 
 dependencies {
+	// LINE SDK
+	// implementation 'com.linecorp.bot:line-bot-spring-boot:4.2.0'
+    compile('com.linecorp.bot:line-bot-spring-boot:4.2.0')
+
     // import JHipster dependencies BOM
     if (!project.hasProperty("gae")) {
         implementation platform("io.github.jhipster:jhipster-dependencies:${jhipster_dependencies_version}")
     }
+    
+	// https://mvnrepository.com/artifact/com.moandjiezana.toml/toml4j
+	// https://github.com/mwanji/toml4j
+	compile group: 'com.moandjiezana.toml', name: 'toml4j', version: '0.7.2'    
 
     // Use ", version: jhipster_dependencies_version, changing: true" if you want
     // to use a SNAPSHOT release instead of a stable release
@@ -272,6 +280,9 @@ dependencies {
     implementation "org.springframework.security:spring-security-data"
     implementation "org.springframework.security:spring-security-web"
     implementation "org.springframework.security:spring-security-messaging"
+    
+    implementation 'com.google.code.gson:gson:2.8.6'
+    
     implementation "io.jsonwebtoken:jjwt-api"
     if (!project.hasProperty("gae")) {
         runtimeOnly "io.jsonwebtoken:jjwt-impl"
