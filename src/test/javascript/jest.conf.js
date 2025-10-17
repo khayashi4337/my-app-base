@@ -2,7 +2,8 @@ const tsconfig = require('../../../tsconfig.json');
 
 module.exports = {
   transform: {
-    '^.+\\.tsx?$': 'ts-jest'
+    '^.+\\.tsx?$': 'ts-jest',
+    '^.+\\.jsx?$': 'ts-jest'
   },
   rootDir: '../../../',
   testURL: 'http://localhost/',
@@ -23,6 +24,9 @@ module.exports = {
   testResultsProcessor: 'jest-sonar-reporter',
   testPathIgnorePatterns: [
     '<rootDir>/node_modules/'
+  ],
+  transformIgnorePatterns: [
+    'node_modules/(?!(axios)/)'
   ],
   setupFiles: [
     '<rootDir>/src/test/javascript/spec/enzyme-setup.ts',
