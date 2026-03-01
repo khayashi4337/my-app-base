@@ -1,0 +1,10 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "skipLibCheck": true,
+    "noEmit": false,
+    "strict": false
+  },
+  "include": ["src/main/webapp/app"],
+  "exclude": ["node_modules", "src/test"]
+}
