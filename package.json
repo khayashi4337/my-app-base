@@ -62,7 +62,7 @@
     "sockjs-client": "1.6.1",
     "styled-components": "^5.1.1",
     "tslib": "1.11.1",
-    "uuid": "7.0.3",
+    "uuid": "14.0.0",
     "webstomp-client": "1.2.6"
   },
   "devDependencies": {
