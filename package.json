@@ -142,6 +142,7 @@
   "resolutions": {
     "axios": "^1.16.0",
     "cheerio": "1.0.0-rc.12",
+    "generator-jhipster/minimatch": "9.0.9",
     "minimist": "^1.2.8",
     "json5": "^2.2.3",
     "debug": "^4.4.3",
