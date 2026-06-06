@@ -32,7 +32,7 @@ exports[`Header Renders a Header component in dev profile with LoadingBar, Navba
       tag="button"
       type="button"
     />
-    <Component />
+    <Brand />
     <Collapse
       appear={false}
       enter={true}
@@ -58,16 +58,16 @@ exports[`Header Renders a Header component in dev profile with LoadingBar, Navba
         tag="ul"
         vertical={false}
       >
-        <Component />
-        <Component />
-        <Component
+        <Home />
+        <EntitiesMenu />
+        <AdminMenu
           showSwagger={true}
         />
-        <Component
+        <LocaleMenu
           currentLocale="en"
           onClick={[Function]}
         />
-        <Component
+        <AccountMenu
           isAuthenticated={true}
         />
       </Nav>
@@ -96,7 +96,7 @@ exports[`Header Renders a Header component in prod profile with LoadingBar, Navb
       tag="button"
       type="button"
     />
-    <Component />
+    <Brand />
     <Collapse
       appear={false}
       enter={true}
@@ -122,16 +122,16 @@ exports[`Header Renders a Header component in prod profile with LoadingBar, Navb
         tag="ul"
         vertical={false}
       >
-        <Component />
-        <Component />
-        <Component
+        <Home />
+        <EntitiesMenu />
+        <AdminMenu
           showSwagger={false}
         />
-        <Component
+        <LocaleMenu
           currentLocale="en"
           onClick={[Function]}
         />
-        <Component
+        <AccountMenu
           isAuthenticated={true}
         />
       </Nav>

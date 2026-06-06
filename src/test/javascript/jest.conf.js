@@ -24,7 +24,10 @@ module.exports = {
     '<rootDir>/src/test/javascript'
   ],
   moduleNameMapper: mapTypescriptAliasToJestAlias({
-    '\\.(css|scss)$': 'identity-obj-proxy'
+    '\\.(css|scss)$': 'identity-obj-proxy',
+    // sinon 19 ships an ESM bundle via the "browser"/"import" export conditions, which
+    // jest's jsdom environment resolves and cannot parse. Force the CommonJS build.
+    '^sinon$': '<rootDir>/node_modules/sinon/lib/sinon.js'
   }),
   reporters: [
     'default',
