@@ -155,7 +155,7 @@
     "@babel/traverse": "^7.29.0",
     "braces": "^3.0.3",
     "cross-spawn": "^7.0.6",
-    "follow-redirects": "^1.15.11",
+    "follow-redirects": "^1.16.0",
     "semver": "^7.7.4",
     "ws": "^8.19.0",
     "handlebars": "^4.7.8",
