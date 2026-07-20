@@ -31,7 +31,7 @@
     "@fortawesome/free-solid-svg-icons": "5.13.0",
     "@fortawesome/react-fontawesome": "0.1.9",
     "availity-reactstrap-validation": "2.6.1",
-    "axios": "^1.16.0",
+    "axios": "^1.18.0",
     "bootstrap": "4.4.1",
     "dayjs": "^1.11.13",
     "google-map-react": "^1.1.7",
@@ -140,7 +140,7 @@
     "reportFile": "TESTS-results-sonar.xml"
   },
   "resolutions": {
-    "axios": "^1.16.0",
+    "axios": "^1.18.0",
     "cheerio": "1.0.0-rc.12",
     "generator-jhipster/minimatch": "9.0.9",
     "generator-jhipster/glob": "^11.1.0",
