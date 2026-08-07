@@ -107,7 +107,7 @@
     "merge-jsons-webpack-plugin": "2.0.1",
     "mini-css-extract-plugin": "2.9.2",
     "moment-locales-webpack-plugin": "1.2.0",
-    "postcss": "8.5.10",
+    "postcss": "8.5.23",
     "postcss-loader": "8.1.1",
     "prettier": "3.5.2",
     "react-infinite-scroller": "1.2.4",
