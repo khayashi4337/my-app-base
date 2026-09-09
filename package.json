@@ -148,7 +148,7 @@
     "jest-junit/uuid": "^11.1.1",
     "node-notifier/uuid": "^11.1.1",
     "sockjs/uuid": "^11.1.1",
-    "svgo": "^4.0.2",
+    "svgo": "^4.1.0",
     "flatted": "^3.4.2",
     "ip-address": "^10.4.0",
     "@hono/node-server": "^1.19.13",
